@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin approval of user flags</title>
+</head>
+<body>
+<!--This verification form will contain four sections. 1. page header indicating logo and heading of page. 2- a form containing
+search box and grid of new users pending approval and read only text boxes of found new user undergoing approval,3 This section will be
+the verification section where the new user will be assigned a user type and status 4. Footer seciton should contain adverts.-->
+
+<header>
+    <!--page header indicating logo and heading of page.-->
+    <img align="right" src="logo.jpg" alt="logo of BJTS"/>
+    <h3>Approval of user flags</h3>
+</header>
+
+<section>
+    <form>
+        <fieldset>
+            <legend>Search for new user flags for approval</legend>
+            <!--This is to enable admin user to search for new users-->
+            <label for="search"> Search</label>
+            <input type="search"name="search">
+            <p></p>
+        </fieldset>
+        <fieldset>
+            <legend>New user flags pending approvals</legend>
+            <table>
+                <!--<caption> <h3> List of new users pending Admin verification</h3></caption>-->
+                <tr>
+                    <th>Bug ID</th>
+                    <th>Title</th>
+                    <th>Owner</th>
+                    <th>Email</th>
+                    <th>Flag</th>
+                    <th>Description</th>
+                    <th>Flag owner</th>
+
+                </tr>
+
+            </table>
+
+        </fieldset>
+    </form>
+
+</section>
+<form>
+
+
+    <fieldset>
+        <p></p>
+        <legend>Flag verification...</legend>
+        <p></p>
+        <input type="radio" name="status" value="Approve"/>Approved
+        <input type="radio" name="status" value="NotApprove" checked/>Not Approved
+        <p></p>
+        <label for="remarks">Remarks</label>
+        <input type="text"name="remarks" value="Enter Remarks"/>
+        <p></p>
+        <input type="submit"value="Submit"/>
+    </fieldset>
+</form>
+</section>
+</body>
+</html>
