@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,10 +13,9 @@
 <h1>Hello</h1>
 
 <?php
-session_start();
-$x = $username;
-$_SESSION['sessionVar'] = $x;
-echo "$x";
+// Echo session variables that were set on previous page
+echo "user name" . $_SESSION["uname"] . ".<br>";
+echo "password " . $_SESSION["pwd"] . ".";
 ?>
 </body>
 </html>

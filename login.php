@@ -1,4 +1,8 @@
 <?php
+// Start the session
+session_start();
+?>
+<?php
 /**
  * Created by PhpStorm.
  * User: prosper
@@ -22,10 +26,9 @@ if(mysqli_num_rows($result) == 1)
 {
     header("location: home.php"); // Redirecting To another Page
 
-    session_start();
-    $x = $username;
-    $_SESSION['sessionVar'] = $x;
-    echo "$x";
+    $_SESSION["uname"] = $username;
+    $_SESSION["pwd"] = $password;
+
 
 }else
 {
