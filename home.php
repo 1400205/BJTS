@@ -7,5 +7,9 @@
 
 <body>
 <h1>Hello</h1>
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+<input type="text" name="username" placeholder=$username /><br><br>
 </body>
 </html>
