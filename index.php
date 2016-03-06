@@ -11,7 +11,7 @@
 <div class="loginBox">
     <h3>Login Form</h3>
     <br><br>
-    <form method="post" action="login.php" action= "home.php">
+    <form method="post" action="login.php">
         <label>Username:</label><br>
         <input type="text" name="username" placeholder="username" /><br><br>
         <label>Password:</label><br>

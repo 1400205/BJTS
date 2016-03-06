@@ -8,8 +8,11 @@
 <body>
 <h1>Hello</h1>
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-<input type="text" name="username" placeholder=$username /><br><br>
+<?php
+session_start();
+$x = $username;
+$_SESSION['sessionVar'] = $x;
+echo "$x";
+?>
 </body>
 </html>
