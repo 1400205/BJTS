@@ -14,8 +14,8 @@ session_start();
 
 <?php
 // Echo session variables that were set on previous page
-echo "user name" . $_SESSION["uname"] . ".<br>";
-echo "password " . $_SESSION["pwd"] . ".";
+echo "user name: " . $_SESSION["uname"] . ".<br>";
+echo "password: " . $_SESSION["pwd"] . ".";
 ?>
 </body>
 </html>
