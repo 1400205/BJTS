@@ -21,5 +21,10 @@
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 </div>
+
+<footer>
+    <a href="Registration.html">New user? Please Register</a>
+
+</footer>
 </body>
 </html>
