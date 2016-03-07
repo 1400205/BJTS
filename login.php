@@ -38,8 +38,9 @@ if(mysqli_num_rows($result) == 1 and $usertype=='Admin' and $userstatus==1) {
     $_SESSION["uname"] = $username;
     $_SESSION["pwd"] = $password;
 
-    $_SESSION["usertype"] = $usertype;
-    $_SESSION["userstatus"] = $userstatus;
+    $_SESSION["usertype"] = $usertype;//user type assigned to session global variable
+    $_SESSION["userstatus"] = $userstatus;//user stautus assigned to session global variable
+    $_SESSION["userid"] = $userid;//user id assigned to session global variable
 }
 elseif (mysqli_num_rows($result) == 1 and $usertype=='Non-Admin' and $userstatus==1)
     {
