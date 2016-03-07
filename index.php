@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>BJTS Account</title>
+    <title>Bugs and Jobs Tracking System</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-<h1>LOGIN TO BJTS</h1>
+<h1>Bugs & Jobs Tracing System(BJTS)</h1>
 <div class="loginBox">
-    <h3>BJTS Login Form</h3>
+    <h3>LOGIN TO BJTS</h3>
     <br><br>
     <form method="post" action="login.php">
         <label>Username:</label><br>
