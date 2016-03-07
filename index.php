@@ -9,7 +9,7 @@
 <body>
 <h1>LOGIN TO BJTS</h1>
 <div class="loginBox">
-    <h3>Login Form</h3>
+    <h3>BJTS Login Form</h3>
     <br><br>
     <form method="post" action="login.php">
         <label>Username:</label><br>
