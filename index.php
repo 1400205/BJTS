@@ -23,7 +23,7 @@
 </div>
 
 <footer>
-    <a href="Registration.html">New user? Please Register</a>
+    <a href="registerUser.php">New user? Please Register</a>
 
 </footer>
 </body>
