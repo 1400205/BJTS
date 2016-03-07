@@ -25,6 +25,9 @@ $result=mysqli_query($db,$sql);
 
 $row=mysqli_fetch_array($result);//get the row of data
 
+$usertype = $row['userType'];//get user type
+$userstatus = $row['userStatus'];//get user status
+
 if(mysqli_num_rows($result) == 1 and $usertype=='Admin' and $userstatus==1) {
 
     $usertype = $row['userType'];//get user type
