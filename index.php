@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<h1>Bugs & Jobs Tracing System(BJTS)</h1>
+<h1>Bugs & Jobs Tracking System(BJTS)</h1>
 <div class="loginBox">
     <h3>LOGIN TO BJTS</h3>
     <br><br>
