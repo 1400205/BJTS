@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<h1>Login to BJTS</h1>
+<h1>LOGIN TO BJTS</h1>
 <div class="loginBox">
     <h3>Login Form</h3>
     <br><br>
