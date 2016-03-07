@@ -20,9 +20,9 @@
 </header>
 
 <section>
-    <form>
-        <h4>Create Account</h4>
-        <lable for="username">Your Name</lable><br/>
+    <form method="post" action="register.php">
+        <h3>Create Account</h3>
+        <lable for="username">User Name</lable><br/>
         <input type="text" name="username"/>
         <p></p>
         <lable for="Email">Email</lable><br/>
