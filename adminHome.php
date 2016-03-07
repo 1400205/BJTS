@@ -17,9 +17,9 @@ session_start();
 echo "user name: " . $_SESSION["uname"] . ".<br>";
 echo "password: " . $_SESSION["pwd"] . ".";
 
-echo "<p>". $_SESSION["usertype"]. "<br>";
-echo "<p>".$_SESSION["userstatus"]."<br>";
-echo"<p>". $_SESSION["userid"]."<br>";
+echo "<p>"."user type:". $_SESSION["usertype"]. "<br>";
+echo "<p>"."user status:".$_SESSION["userstatus"]."<br>";
+echo"<p>"."user ID:". $_SESSION["userid"]."<br>";
 
 ?>
 </body>
