@@ -36,8 +36,8 @@ if(mysqli_num_rows($result) == 1)
     $_SESSION["uname"] = $username;
     $_SESSION["pwd"] = $password;
 
-    $_SESSION["usertype"] = $username;
-    $_SESSION["userstatus"] = $password;
+    $_SESSION["usertype"] =  $usertype;
+    $_SESSION["userstatus"] =  $userstatus;
 
 
 }else
