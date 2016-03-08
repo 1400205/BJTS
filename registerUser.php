@@ -79,7 +79,7 @@ if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"
 </header>
 
 <section>
-    <form method="post" action="registerUser.php">
+    <form method="post" action="userRegistration.php">
         <h3>Create Account</h3>
         <lable for="username">User Name</lable><br/>
         <input type="text" name="username"/>

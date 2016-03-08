@@ -32,6 +32,9 @@ if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"
 
     if(mysqli_query($db, $qry)){
         echo "Records added successfully.";
+
+        //redirect user to login screen
+        header("location: index.php");
     } else{
         echo "ERROR: Could not able to execute $qry. " . mysqli_error($db);
     }
