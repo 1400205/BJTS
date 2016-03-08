@@ -28,7 +28,7 @@ if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"
 //attempt excuting query
 
 //Build a query string to insert data into users table
-$qry="INSERT  INTO users(username, password, emailAddress, phoneExtention) VALUES ($username, $password, $email, $phone)";
+$qry="INSERT  INTO users(username, password, emailAddress, phoneExtention) VALUES ('$username', '$password', '$email', '$phone')";
 
 if(mysqli_query($db, $qry)){
     echo "Records added successfully.";
