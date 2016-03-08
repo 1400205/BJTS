@@ -1,3 +1,10 @@
+
+<?php
+//open start session
+
+session_start();
+?>
+?>
 <?php
 /**
  * Created by PhpStorm.
@@ -31,7 +38,7 @@ if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"
     $qry="INSERT  INTO users(username, password, emailAddress, phoneExtention) VALUES ('$username', '$password', '$email', '$phone')";
 
     if(mysqli_query($db, $qry)){
-        echo "Records added successfully.";
+        $_SESSION['success']= "Records added successfully.";
 
         //redirect user to login screen
         header("location: index.php");
