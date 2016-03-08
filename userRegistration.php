@@ -36,7 +36,7 @@ if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"
         //redirect user to login screen
         header("location: index.php");
     } else{
-        echo "ERROR: Could not able to execute $qry. " . mysqli_error($db);
+        echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
     }
 
 // Close connection
