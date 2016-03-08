@@ -14,11 +14,12 @@ session_start();
 </head>
 
 <body>
-<P>"<?PHP echo " ".$_SESSION['success'] ?>"</P>
+
 <h1>Bugs & Jobs Tracking System(BJTS)</h1>
 <div class="loginBox">
     <h3>LOGIN TO BJTS</h3>
     <br><br>
+    <P>"<?PHP echo " ".$_SESSION['success'] ?>"</P>
     <form method="post" action="login.php">
         <label>Username:</label><br>
         <input type="text" name="username" placeholder="username" /><br><br>
