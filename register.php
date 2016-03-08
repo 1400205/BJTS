@@ -13,10 +13,22 @@ include ("connect.php");//Establishing connection with our database
 if ($db==false)
 {die("could not connect");}
 
+//check emptyness of input boxies
+
+if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"])|| empty($_POST["phone"]))
+{
+    echo "Both fields are required.";
+}else {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
+}
+
 //attempt excuting query
 
 //Build a query string to insert data into users table
-$qry="INSERT  INTO users(username, password, emailAddress, phoneExtention) VALUES ('kanda','pass','kandagh2000@gmail.com','0208233480')";
+$qry="INSERT  INTO users(username, password, emailAddress, phoneExtention) VALUES ($username, $password, $email, $phone)";
 
 if(mysqli_query($db, $qry)){
     echo "Records added successfully.";
