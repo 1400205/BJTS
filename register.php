@@ -18,7 +18,7 @@ if ($db==false)
 //Build a query string to insert data into users table
 $qry="INSERT  INTO users(username,password,emailAddress,phoneExtention) VALUES 'kanda','pass','kandagh2000@gmail.com','0208233480'";
 
-if(mysqli_query($db, $sql)){
+if(mysqli_query($db, $qry)){
     echo "Records added successfully.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($db);
