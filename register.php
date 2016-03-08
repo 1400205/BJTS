@@ -21,7 +21,7 @@ $qry="INSERT  INTO users(username,password,emailAddress,phoneExtention) VALUES '
 if(mysqli_query($db, $qry)){
     echo "Records added successfully.";
 } else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($db);
+    echo "ERROR: Could not able to execute $qry. " . mysqli_error($db);
 }
 
 // Close connection
