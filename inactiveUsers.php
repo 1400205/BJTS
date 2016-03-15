@@ -8,4 +8,4 @@
 include ("connect.php");
 
 $dg = new C_DataGrid("SELECT * FROM users","uid","users");
-$sg->display();
+$dg->display();
