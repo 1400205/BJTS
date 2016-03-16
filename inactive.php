@@ -29,6 +29,6 @@ WHILE($row=mysqli_fetch_assoc($result))
     $userStatus=$row['userStatus'];
     $username=$row['username'];
 
-    echo '<table border="1" style="width:100%">'.'<col width="130">'. '<col width="130">'.'<col width="130">'.'<tr>'.'<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' .$username.'</td>'.'<td>'. $userType.'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
+    echo '<table border="1" style="width:60%">'.'<col width="75">'. '<col width="75">'.'<col width="75">'.'<tr>'.'<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' .$username.'</td>'.'<td>'. $userType.'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
 ?>
