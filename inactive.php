@@ -29,6 +29,6 @@ WHILE($row=mysqli_fetch_assoc($result))
     $userStatus=$row['userStatus'];
     $username=$row['username'];
 
-    echo '<a href="inactive.php?uid="'.$uid.'>'.$uid.',' .$username.','. $userType.','.'</a>'.'<br>';
+    echo '<table>'. '<tr>'.'<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' .$username.'</td>'.'<td>'. $userType.'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
 ?>
