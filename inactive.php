@@ -29,6 +29,5 @@ WHILE($row=mysqli_fetch_assoc($result))
     $userStatus=['userStatus'];
     $username=['username'];
     echo '<a href="inactive.php?uid="'.$uid.'>' .$username.','. $userType. '</a>';
-    break;
 }
 ?>
