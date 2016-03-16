@@ -15,18 +15,17 @@
  *
  *
  */
+
 include ("connect.php");//Establishing connection with our database
 //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
 $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus='0'";//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
-//loop through the database and fetch all users with userStatus=0
-
+echo '<h3>In active Users Pending Activation</h3>';
 echo '<table border="1" style="width:60%">'.'<th>'.'User ID'.'</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'User Status'.
 
     '</th>'.'</table>';
-
-echo '<h3>In active Users Pending Activation</h3>';
+//loop through the database and fetch all users with userStatus=0
 WHILE($row=mysqli_fetch_assoc($result))
 {
     //get the userid, userTpe,userStatus,username
