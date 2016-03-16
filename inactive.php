@@ -22,7 +22,7 @@ $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus='0'";/
 $result=mysqli_query($db,$sql);//fetch data from database
 
 echo '<h3>In active Users Pending Activation</h3>';
-echo '<table border="1" style="width:100%">'.'<col width="75">'.'<col width="75">'.'<col width="75">'.'<th>'.'User ID'.
+echo '<table border="1" style="width:100%">'.'<col width="75">'.'<col width="75">'.'<col width="75">'.'<th>'.'<col width="75">'.'User ID'.
     '</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'User Status'.
 
     '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
