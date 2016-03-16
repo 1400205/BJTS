@@ -21,8 +21,8 @@ include ("connect.php");//Establishing connection with our database
 $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus='0'";//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
-echo '<h3>In active Users Pending Activation</h3>';
-echo '<table border="1" style="width:100%">'.'<col width="75">'.'<col width="75">'.'<col width="75">'.'<col width="75">'.'<th>'.'User ID'.
+echo '<h3>Inactive Users Pending Activation</h3>';
+echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'User ID'.
     '</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'User Status'.
 
     '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
@@ -35,7 +35,7 @@ WHILE($row=mysqli_fetch_assoc($result))
     $userStatus=$row['userStatus'];
     $username=$row['username'];
 
-    echo '<table border="1" style="width:100%">'.'<col width="75">'. '<col width="75">'.'<col width="75">'.'<col width="75">'.'<tr>'.
+    echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
         '<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' .$username.'</td>'.'<td>'.
         $userType.'</td>'.'<td>'."<input type='submit' name='submit' value = 'Activate'>".'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
