@@ -19,7 +19,6 @@ session_start();
 <div class="loginBox">
     <h3>LOGIN TO BJTS</h3>
     <br><br>
-    <P>"<?PHP echo " ".$_SESSION['success'] ?>"</P>
     <section>
         <fieldset>
     <form method="post" action="login.php">
@@ -28,6 +27,11 @@ session_start();
         <label>Password:</label><br>
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value = "login"/>
+        <p></p>
+        <footer>
+            <a href="registerUser.php">New user? Please Register</a>
+
+        </footer>
     </form>
             </fieldset>
     </section>
@@ -35,9 +39,6 @@ session_start();
 
 </div>
 
-<footer>
-    <a href="registerUser.php">New user? Please Register</a>
 
-</footer>
 </body>
 </html>
