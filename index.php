@@ -20,6 +20,8 @@ session_start();
     <h3>LOGIN TO BJTS</h3>
     <br><br>
     <P>"<?PHP echo " ".$_SESSION['success'] ?>"</P>
+    <section>
+        <fieldset>
     <form method="post" action="login.php">
         <label>Username:</label><br>
         <input type="text" name="username" placeholder="username" /><br><br>
@@ -27,6 +29,8 @@ session_start();
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value = "login"/>
     </form>
+            </fieldset>
+    </section>
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 </div>
