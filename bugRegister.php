@@ -25,7 +25,7 @@ session_start();
 <section>
     <!--displays input fields for  user inputs-->
     <fieldset>
-        <form method="POST",action="bugs.php">
+        <form method="POST" action="bugs.php">
             <legend>Please enter your bug details...</legend>
             <p></p>
             <label for="title">Title</label><br>
