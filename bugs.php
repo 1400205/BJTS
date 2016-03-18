@@ -4,7 +4,7 @@
 
 session_start();
 ?>
-?>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -25,7 +25,7 @@ if( empty($_POST["title"])|| empty($_POST["description"]))
 }else {
     $title = $_POST['title'];
     $description = $_POST['description'];
-   $uid=$_SESSION['email'];
+   $uid=$_SESSION["userid"];
    // $phone=$_POST['phone'];
 
     //check connection
