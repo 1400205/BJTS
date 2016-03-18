@@ -46,7 +46,7 @@ else
 //attempt excuting query
 
 //Build a query string to insert data into users table
-    $qry="INSERT  INTO bugs(title,bugDesc,postDate,uid) VALUES ('$title', '$mydesc', '$postDate','$uid')";
+    $qry="INSERT  INTO bugs(title,bugDesc,uid) VALUES ('$title', '$mydesc', $uid')";
 
     if(mysqli_query($db, $qry)){
        echo "Records added successfully.";
