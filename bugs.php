@@ -24,7 +24,7 @@ else
 
 {
     $uid=$_SESSION["userid"];
-    $postdate= new DateTime();//get current date
+    $postdate= new DateTime('Y-m-d H:i:s');//get current date
     $title = $_POST['title'];
     $mydesc = $_POST['description'];
 
