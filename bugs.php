@@ -19,7 +19,7 @@ include ("connect.php");//Establishing connection with our database
 
 //check emptyness of input boxies
 
-if(empty($_POST["username"]) || empty($_POST["title"])|| empty($_POST["description"]))
+if( empty($_POST["title"])|| empty($_POST["description"]))
 {
     echo "All fields are required.";
 }else {
