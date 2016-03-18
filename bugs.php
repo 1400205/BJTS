@@ -35,10 +35,10 @@ if( empty($_POST["title"])|| empty($_POST["description"]))
 //attempt excuting query
 
 //Build a query string to insert data into users table
-    $qry="INSERT  INTO bugs(uid,title, bugDesc ) VALUES ('$uid','$title',$description')";
+    $qry="INSERT INTO bugs(uid,title,bugDesc)VALUES('$uid','$title','$description')";
 
     if(mysqli_query($db, $qry)){
-        $_SESSION['success']= "Records added successfully.";
+        //$_SESSION['success']= "Records added successfully.";
 
         //redirect user to login screen
         header("location: index.php");
