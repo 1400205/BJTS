@@ -47,7 +47,7 @@ if( empty($_POST["title"])|| empty($_POST["description"]))
     }
 
 // Close connection
-    mysqli_close(db);
+    mysqli_close($db);
 
 //get user input data from form into variables
 //$username = $_POST['username'];
