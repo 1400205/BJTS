@@ -29,5 +29,9 @@ if(isset($_POST["submit"])) {
     $sql = "SELECT title FROM bugs WHERE title='$title'";
     $result = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($result);//get the row of data
-    echo $row["title"];
+   // echo $row["title"];
+    if (mysqli_num_rows($row)==1  ) OR  (mysqli_num_rows($row)>1  ) ;{
+
+        echo $row["title"];
+    }
 }
