@@ -45,5 +45,5 @@ elseif(isset($_POST["submit"])) {
 }else
 {
 
-    echo "add records";
+    echo 'add records';
 }
