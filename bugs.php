@@ -41,7 +41,7 @@ elseif(isset($_POST['submit']))
 
 
 
-    if (mysqli_num_rows($result)==1)
+    if (mysqli_num_rows($row)==1)
     {
 
         header("location: bugRegister.php"); // Redirecting To another Page
