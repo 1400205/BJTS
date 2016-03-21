@@ -37,7 +37,10 @@ elseif(isset($_POST['submit']))
 
     $gettitle="SELECT title FROM from bugs WHERE title='$title'";
     $result=mysqli_query($db,$gettitle);
-    $row=mysqli_fetch_array($gettitle,mysqli_fetch_assoc);
+
+    $row=mysqli_fetch_array($result);//get the row of data
+   // $row=mysqli_fetch_array($gettitle,mysqli_fetch_assoc);
+    $title=$row['title'];
 
     if (mysqli_num_rows($result)==1)
     {
