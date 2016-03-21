@@ -25,5 +25,5 @@ if( $_POST["submit"])
     $email=$_POST['email'];
     $phone=$_POST['phone'];
 
-    echo "$email";
+    echo '$email';
 }
