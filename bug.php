@@ -21,7 +21,10 @@ if ((empty($_POST["title"])) || (empty($_POST["description"])))
     echo "Please all fields are required";
 }
 
-
+elseif(isset($_POST["submit"])) {
+    $title = $_POST["title"];
+    $description = $_POST["description"];
+    $uid = $_SESSION["userid"];
 
 //strip variables of all sql injections
     $title = mysqli_real_escape_string($db, $title);
@@ -37,7 +40,9 @@ if ((empty($_POST["title"])) || (empty($_POST["description"])))
     {
 
         echo $row["title"];
+        echo "Bug Already Exists. App does not permit duplicate record entry";
 
 
 
+    }
 }
