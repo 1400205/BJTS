@@ -65,6 +65,7 @@ elseif(isset($_POST['submit']))
 
             //redirect user to login screen
             header("location: index.php");
+            echo '$title';
         } else{
             echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
         }
