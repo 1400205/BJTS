@@ -44,8 +44,8 @@ elseif(isset($_POST["submit"])) {
             //$_SESSION['success']= "Records added successfully.";
 
             //redirect user to login screen
-            header("location: index.php");
-            echo $title;
+           // header("location: index.php");
+            echo "Record successfully Submitted";
         } else{
             echo "ERROR: Could not be able to execute. Check duplicate record entry"/**$qry. mysqli_error($db)*/;
         }
