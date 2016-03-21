@@ -49,9 +49,17 @@ if( $_POST["submit"])
 
         //Build a query string to insert data into users table
         $qry="INSERT  INTO users(username, password, emailAddress, phoneExtention) VALUES ('$username', '$password', '$email', '$phone')";
-        if (mysqli_query($db, $qry));
-          $success= "Records added successfully.";
-        echo "$success";
+        if (mysqli_query($db, $qry)) {
+            $success = "Records added successfully.";
+            echo "$success";
 
+        }else{
+            {
+                echo "ERROR: Could not be able to execute. Please check duplicate record entry"/**$qry. mysqli_error($db)*/;
+            }
+
+// Close connection
+            mysqli_close(db);
+        }
     }
 }
