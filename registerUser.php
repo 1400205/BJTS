@@ -22,7 +22,7 @@
 
 <section>
     <fieldset>
-    <form method="post" action="Registration.php">
+    <form method="post" action="userRegistration.php">
         <h3>Create Account</h3>
         <lable for="username">User Name</lable><br/>
         <input type="text" name="username"/>
