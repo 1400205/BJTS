@@ -24,10 +24,10 @@ if( empty($_POST["title"])|| empty($_POST["description"]))
     echo "All fields are required.";
 }
 
-elseif(isset($_POST['submit']))
+elseif(isset($_POST["submit"]))
 {
-    $title = $_POST['title'];
-    $description = $_POST['description'];
+    $title = $_POST["title"];
+    $description = $_POST["description"];
     $uid=$_SESSION["userid"];
 
 //strip variables of all sql injections
@@ -35,7 +35,7 @@ elseif(isset($_POST['submit']))
     $description=mysqli_real_escape_string($db,$description);
     $uid=mysqli_real_escape_string($db,$uid);
 
-    $sql="SELECT count(title) FROM bugs HAVING title=".$_POST['title'];
+    $sql="SELECT title FROM bugs HAVING title=".$_POST["title"];
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result);//get the row of data
 
