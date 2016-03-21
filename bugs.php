@@ -41,14 +41,19 @@ elseif(isset($_POST['submit']))
 
 
 
-    if (mysqli_num_rows($row)==1 OR mysqli_num_rows($row)>1 )
-    {
+    if (mysqli_num_rows($row)==1  ) {
 
         header("location: bugRegister.php"); // Redirecting To another Page
 
-        $msg="Sorry This Bug already exists";
+        $msg = "Sorry This Bug already exists";
         print '$msg';
-    }else
+    }
+        elseif ( mysqli_num_rows($row)!=1)
+        {
+
+            print '$title';
+        }
+    else
     {
 
         //check connection
@@ -58,6 +63,8 @@ elseif(isset($_POST['submit']))
 //attempt excuting query
 
 //Build a query string to insert data into users table
+
+
         $qry="INSERT INTO bugs(uid,title,bugDesc)VALUES('$uid','$title','$description')";
 
         if(mysqli_query($db, $qry)){
@@ -65,7 +72,7 @@ elseif(isset($_POST['submit']))
 
             //redirect user to login screen
             header("location: index.php");
-            echo '$title';
+            echo $title;
         } else{
             echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
         }
