@@ -39,7 +39,7 @@
 
         <p></p>
 
-        <input type="submit" Value="Create your BJTS Account"/>
+        <input type="submit" name="submit" Value="Create your BJTS Account"/>
 
     </form>
     </fieldset>
