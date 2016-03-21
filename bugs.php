@@ -40,9 +40,9 @@ elseif(isset($_POST['submit']))
 
     $row=mysqli_fetch_array($result);//get the row of data
    // $row=mysqli_fetch_array($gettitle,mysqli_fetch_assoc);
-    $title=$row['title'];
 
-    if (mysqli_num_rows($result)==1)
+
+    if (mysqli_num_rows($result)!=1)
     {
         $msg="Sorry This Bug already exists";
         print '$msg';
