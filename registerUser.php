@@ -32,7 +32,7 @@
         <p></p>
 
         <lable for="phone">Your Phone Number</lable><br/>
-        <input type="number" min="0" max="15" name="phone"/>
+        <input type="number" maxlength="15" name="phone"/>
         <p></p>
         <lable for="password">Your Password</lable><br/>
         <input type="password" name="password"/>
