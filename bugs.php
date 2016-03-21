@@ -52,6 +52,8 @@ elseif(isset($_POST['submit']))
         {
 
             echo "$title";
+            $num=mysqli_num_rows($row);
+            echo "$num";
         }
     else
     {
