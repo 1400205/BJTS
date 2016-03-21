@@ -40,8 +40,6 @@ elseif(isset($_POST["submit"])) {
     {
 
         echo $row["title"];
-        echo "Bug Already Exists. App does not permit duplicate record entry";
-
 
 
     }
