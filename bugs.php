@@ -51,7 +51,7 @@ elseif(isset($_POST['submit']))
         elseif ( mysqli_num_rows($row)!=1)
         {
 
-            print '$title';
+            echo '$title';
         }
     else
     {
