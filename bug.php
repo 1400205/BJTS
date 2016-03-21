@@ -16,7 +16,12 @@ session_start();
 //call connection string fucntion
 include ("connect.php");//Establishing connection with our database
 
-if(isset($_POST["submit"])) {
+if ((empty($_POST["title"])) || (empty($_POST["description"])))
+{
+    echo "Please all fields are required";
+}
+
+elseif(isset($_POST["submit"])) {
     $title = $_POST["title"];
     $description = $_POST["description"];
     $uid = $_SESSION["userid"];
@@ -33,5 +38,7 @@ if(isset($_POST["submit"])) {
     if (mysqli_num_rows($row)==1   OR  (mysqli_num_rows($row)>1  ) );{
 
         echo $row["title"];
+
+
     }
 }
