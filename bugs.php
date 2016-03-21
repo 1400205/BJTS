@@ -35,14 +35,14 @@ elseif(isset($_POST['submit']))
     $description=mysqli_real_escape_string($db,$description);
     $uid=mysqli_real_escape_string($db,$uid);
 
-    $gettitle="SELECT title FROM from bugs WHERE title='$title'";
+    $gettitle="SELECT title FROM bugs WHERE title='$title'";
     $result=mysqli_query($db,$gettitle);
 
     $row=mysqli_fetch_array($result);//get the row of data
    // $row=mysqli_fetch_array($gettitle,mysqli_fetch_assoc);
 
 
-    if (mysqli_num_rows($result)!=1)
+    if (mysqli_num_rows($result)==1)
     {
         $msg="Sorry This Bug already exists";
         print '$msg';
