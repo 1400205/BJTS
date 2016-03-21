@@ -35,7 +35,7 @@ elseif(isset($_POST['submit']))
     $description=mysqli_real_escape_string($db,$description);
     $uid=mysqli_real_escape_string($db,$uid);
 
-    $sql="SELECT title FROM bugs WHERE title='$title'";
+    $sql="SELECT * FROM bugs WHERE title='$title'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result);//get the row of data
 
