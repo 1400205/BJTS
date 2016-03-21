@@ -33,9 +33,9 @@ elseif(isset($_POST["submit"])) {
 
     $sql = "SELECT title FROM bugs WHERE title='$title'";
     $result = mysqli_query($db, $sql);
-    $row = mysqli_fetch_array($result);//get the row of data
+    $row = mysqli_fetch_array($result,mysqli_fetch_assoc);//get the row of data
    // echo $row["title"];
-    if (mysqli_num_rows($row)<1  );
+    if( (mysqli_num_rows($row))<1  )
     {
        // echo 'add records';
         $qry="INSERT INTO bugs(uid,title,bugDesc)VALUES('$uid','$title','$description')";
@@ -57,7 +57,7 @@ elseif(isset($_POST["submit"])) {
     }
 
 
-}elseif (mysqli_num_rows($row)==1  OR mysqli_num_rows($row>1) );
+}elseif( (mysqli_num_rows($row)==1) ||( mysqli_num_rows($row>1) ))
 {
    $errormsg="Record Already Exist. Duplicate Bug entry is Not Allowed";
     echo  "$errormsg";
