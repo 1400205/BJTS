@@ -35,7 +35,7 @@ elseif(isset($_POST['submit']))
     $description=mysqli_real_escape_string($db,$description);
     $uid=mysqli_real_escape_string($db,$uid);
 
-    $sql="SELECT * FROM bugs WHERE title=".$_POST['title'];
+    $sql="SELECT count(title) FROM bugs HAVING title=".$_POST['title'];
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result);//get the row of data
 
