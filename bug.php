@@ -37,7 +37,22 @@ elseif(isset($_POST["submit"])) {
    // echo $row["title"];
     if (mysqli_num_rows($row)<1    );
     {
-        echo 'add records';
+       // echo 'add records';
+        $qry="INSERT INTO bugs(uid,title,bugDesc)VALUES('$uid','$title','$description')";
+
+        if(mysqli_query($db, $qry)){
+            //$_SESSION['success']= "Records added successfully.";
+
+            //redirect user to login screen
+            header("location: index.php");
+            echo $title;
+        } else{
+            echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
+        }
+
+// Close connection
+        mysqli_close($db);
+
 
     }
 
