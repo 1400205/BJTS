@@ -47,7 +47,7 @@ elseif(isset($_POST["submit"])) {
             header("location: index.php");
             echo $title;
         } else{
-            echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
+            echo "ERROR: Could not be able to execute. Check duplicate record entry"/**$qry. mysqli_error($db)*/;
         }
 
 // Close connection
