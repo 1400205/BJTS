@@ -80,8 +80,6 @@ elseif(isset($_POST['submit']))
 }
 
 
-else {
-
 
 
 
@@ -99,7 +97,7 @@ else {
 
 //assign query string and connection variables to sqli guiry function
 
-}
+
 
 
 
