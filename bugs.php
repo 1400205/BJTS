@@ -48,7 +48,7 @@ elseif(isset($_POST['submit']))
         $msg = "Sorry This Bug already exists";
         print '$msg';
     }
-        elseif ( mysqli_num_rows($row)>1)
+        elseif ( mysqli_num_rows($row)!=1)
         {
 
             echo "$title";
