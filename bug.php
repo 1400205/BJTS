@@ -60,5 +60,6 @@ elseif(isset($_POST["submit"])) {
 }elseif (mysqli_num_rows($row)==1  OR mysqli_num_rows($row>1) );
 {
    $errormsg="Record Already Exist. Duplicate Bug entry is Not Allowed";
+    echo  "$errormsg";
 
 }
