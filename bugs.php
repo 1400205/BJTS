@@ -26,7 +26,12 @@ if( empty($_POST["title"])|| empty($_POST["description"]))
     $title = $_POST['title'];
     $description = $_POST['description'];
    $uid=$_SESSION["userid"];
-   // $phone=$_POST['phone'];
+
+//strip variables of all sql injections
+    $title=mysqli_real_escape_string($db,$title);
+    $description=mysqli_real_escape_string($db,$description);
+    $uid=mysqli_real_escape_string($db,$uid);
+
 
     //check connection
     if ($db==false)
