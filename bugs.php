@@ -22,37 +22,65 @@ include ("connect.php");//Establishing connection with our database
 if( empty($_POST["title"])|| empty($_POST["description"]))
 {
     echo "All fields are required.";
-}else {
+}
+
+elseif(isset($_POST['submit']))
+{
     $title = $_POST['title'];
     $description = $_POST['description'];
-   $uid=$_SESSION["userid"];
+    $uid=$_SESSION["userid"];
 
 //strip variables of all sql injections
     $title=mysqli_real_escape_string($db,$title);
     $description=mysqli_real_escape_string($db,$description);
     $uid=mysqli_real_escape_string($db,$uid);
 
+    $gettitle="SELECT title FROM from bugs WHERE title='$title'";
+    $result=mysqli_query($db,$gettitle);
+    $row=mysqli_fetch_array($gettitle,mysqli_fetch_assoc);
 
-    //check connection
-    if ($db==false)
-    {die("could not connect");}
+    if (mysqli_num_rows($result)==1)
+    {
+        $msg="Sorry This Bug already exists";
+        print '$msg';
+    }else
+    {
+
+        //check connection
+        if ($db==false)
+        {die("could not connect");}
 
 //attempt excuting query
 
 //Build a query string to insert data into users table
-    $qry="INSERT INTO bugs(uid,title,bugDesc)VALUES('$uid','$title','$description')";
+        $qry="INSERT INTO bugs(uid,title,bugDesc)VALUES('$uid','$title','$description')";
 
-    if(mysqli_query($db, $qry)){
-        //$_SESSION['success']= "Records added successfully.";
+        if(mysqli_query($db, $qry)){
+            //$_SESSION['success']= "Records added successfully.";
 
-        //redirect user to login screen
-        header("location: index.php");
-    } else{
-        echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
-    }
+            //redirect user to login screen
+            header("location: index.php");
+        } else{
+            echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
+        }
 
 // Close connection
-    mysqli_close($db);
+        mysqli_close($db);
+
+    }
+
+
+
+}
+
+
+else {
+
+
+
+
+
+
 
 //get user input data from form into variables
 //$username = $_POST['username'];
