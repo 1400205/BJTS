@@ -35,10 +35,14 @@ elseif(isset($_POST["submit"])) {
     $result = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($result);//get the row of data
    // echo $row["title"];
-    if (mysqli_num_rows($row)==1   OR  (mysqli_num_rows($row)>1  ) );{
+    if (mysqli_num_rows($row)==1   OR  (mysqli_num_rows($row)>1  ) )
+
+
 
         echo $row["title"];
-
-
     }
+                elseif(mysqli_num_rows($row)==0){
+        echo "add records";
+
+
 }
