@@ -28,7 +28,6 @@ if(empty($_POST["username"]) || empty($_POST["password"])|| empty($_POST["email"
     $email=$_POST['email'];
     $phone=$_POST['phone'];
 
-    echo "$email";
 
     //check connection
     if ($db==false)
