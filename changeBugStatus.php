@@ -41,19 +41,20 @@ WHILE($row=mysqli_fetch_assoc($result))
 
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
         '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
-        $bugdesc.'</td>'.'<td>'. '<form method="post" action="changeBugStatus.php">'.
-
-      //  $sqlupdate = 'UPDATE bugs SET userBugFixed="1" WHERE bugID="$bugid"';
-
-   // if ($db->query($sqlupdate) === TRUE) {
-    //    echo "Record updated successfully";
-  //  } else {
-       // echo "Error updating record: " . $db->error;
-    //}
-
-    //$db->close();
-
+        $bugdesc.'</td>'.'<td>'.
         "<input type='checkbox' name='Fixed' value = 'Fixed'>".
-        '</form>'.'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
+        '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
+echo '<form method="post" action="changeBugStatus.php">'.
+    "<input type='submit' name='submit' value = 'submit'>"
+    .'</form>';
+//  $sqlupdate = 'UPDATE bugs SET userBugFixed="1" WHERE bugID="$bugid"';
+
+// if ($db->query($sqlupdate) === TRUE) {
+//    echo "Record updated successfully";
+//  } else {
+// echo "Error updating record: " . $db->error;
+//}
+
+//$db->close();
 ?>
