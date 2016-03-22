@@ -63,7 +63,7 @@ session_start();
                 if(mysqli_query($db,  $updatebugs)){
 
                     echo "Record updated Successfully";
-                    // echo $bugid."</br>";
+                     echo $bugid."</br>";
                 } else{
                     echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
                 }
