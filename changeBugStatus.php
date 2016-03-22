@@ -36,10 +36,10 @@ WHILE($row=mysqli_fetch_assoc($result))
     $uid=$row['users.uid'];
     $title=$row['title'];
     $bugdesc=$row['bugDesc'];
-    $username=$row['username'];
+   // $username=$row['username'];
 
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-        '<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' .$username.'</td>'.'<td>'.
-        $userType.'</td>'.'<td>'."<input type='submit' name='submit' value = 'Activate'>".'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
+        '<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+        $bugdesc.'</td>'.'<td>'."<input type='submit' name='submit' value = 'Activate'>".'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
 ?>
