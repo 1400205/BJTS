@@ -26,7 +26,7 @@ $_SESSION["userstatus"] = $userstatus;//user stautus assigned to session global 
 $_SESSION["userid"] = $userid;//user id assigned to session global variable
 include ("connect.php");//Establishing connection with our database
 //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-$sql='SELECT users.uid,users.userStatus,bugs.title,bugs.bugDesc FROM users,bugs  WHERE bugs.uid=$_SESSION["$uid"] AND users.userStatus=1';//select required dataset from database
+$sql='SELECT users.uid,users.userStatus,bugs.title,bugs.bugDesc FROM users,bugs  WHERE bugs.uid=$_SESSION["$uid"]';//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
 echo '<h3>Unfixed Bugs</h3>';
