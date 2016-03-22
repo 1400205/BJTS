@@ -49,7 +49,7 @@ WHILE($row=mysqli_fetch_assoc($result))
 
 }
 
-echo '<form method="post" action="changeBugStatus.php">'.
+'<form method="post" action="changeBugStatus.php">'.
 
 
     "<p></p>";
