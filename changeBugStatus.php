@@ -46,7 +46,7 @@ WHILE($row=mysqli_fetch_assoc($result))
 
 
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-        '<a href="changeBugStatus.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' .$username.'</td>'.'<td>'.
-        $userType.'</td>'.'<td>'."<input type='submit' name='submit' value = 'Activate'>".'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
+        '<a href="changeBugStatus.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' . $btitle.'</td>'.'<td>'.
+        $bdesc.'</td>'.'<td>'."<input type='submit' name='submit' value = 'Activate'>".'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
 ?>
