@@ -29,7 +29,7 @@ include ("connect.php");//Establishing connection with our database
 $sql='SELECT users.uid,users.userStatus,bugs.title,bugs.bugDesc FROM users,bugs  WHERE bugs.uid=$_SESSION["$uid"]';//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
-echo '<h3>Inactive Users Pending Activation</h3>';
+echo '<h3>Unfixed Bugs</h3>';
 echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'User ID'.
     '</th>'.'<th>'.'Bug Title'.'</th>'.'<th>'.'Bug Descrition'.
 
