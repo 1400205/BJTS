@@ -42,12 +42,12 @@ WHILE($row=mysqli_fetch_assoc($result))
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
         '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
         $bugdesc.'</td>'.'<td>'.
-        "<input type='checkbox' name='checklist[]' value = '$bugid'>".
+        "<input type='checkbox' name='bugid[]' value = '$bugid'>".
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
-    if(!empty($_POST['check_list'])){
-        foreach($_POST['check_list'] as $bugid){
+    if(!empty($_POST['bugid'])){
+        foreach($_POST['bugid'] as $bugid){
             echo "$bugid was checked! ";
         }
     }
