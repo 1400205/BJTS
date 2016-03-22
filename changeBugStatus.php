@@ -49,10 +49,8 @@ WHILE($row=mysqli_fetch_assoc($result))
 
 }
 
-'<form method="post" action="changeBugStatus.php">'.
+echo '<form method="post" action="changeBugStatus.php">'.
 
-
-    "<p></p>";
     "<input type='submit' name='submit' value = 'submit'>"
     .'</form>';
 
