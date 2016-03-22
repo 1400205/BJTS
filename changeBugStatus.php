@@ -8,7 +8,7 @@ session_start();
     <title>Change Bug Fix Status</title>
 </head>
 <body>
-
+<form method="post" action="changeBugStatus.php">
 <?php
 /**
  * Created by PhpStorm.
@@ -48,20 +48,22 @@ WHILE($row=mysqli_fetch_assoc($result))
 
 
 }
-
-echo '<form method="post" action="changeBugStatus.php">'.
-
-    "<input type='submit' name='submit' value = 'submit'>"
-    .'</form>';
-
-
-//  $sqlupdate = 'UPDATE bugs SET userBugFixed="1" WHERE bugID="$bugid"';
-
-// if ($db->query($sqlupdate) === TRUE) {
-//    echo "Record updated successfully";
-//  } else {
-// echo "Error updating record: " . $db->error;
-//}
-
-//$db->close();
 ?>
+
+    <input type="submit" name="submit" value="submit">
+<?php
+
+if(isset($_POST['submit'])){//to run PHP script on submit
+    if(!empty($_POST['bugid'])){
+// Loop to store and display values of individual checked checkbox.
+        foreach($_POST['bugid'] as $bugid){
+            echo $bugid."</br>";
+        }
+    }
+}
+?>
+
+
+    </form>
+
+</body>
