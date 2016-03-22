@@ -46,11 +46,6 @@ WHILE($row=mysqli_fetch_assoc($result))
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
-    if(!empty($_POST['bugid'])){
-        foreach($_POST['bugid'] as $bugid){
-            echo "$bugid was checked! ";
-        }
-    }
 
 }
 
