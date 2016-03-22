@@ -21,7 +21,7 @@ session_start();
 
 include ("connect.php");//Establishing connection with our database
 //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-$sql="SELECT users.uid,title,bugDesc FROM users,bugs WHERE users.uid=1";//select required dataset from database
+$sql="SELECT bugID,title,bugDesc FROM users,bugs WHERE users.uid=1";//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
 echo '<h3>Inactive Users Pending Activation</h3>';
@@ -33,13 +33,13 @@ echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">
 WHILE($row=mysqli_fetch_assoc($result))
 {
     //get the userid, userTpe,userStatus,username
-    $uid=$row["users.uid"];
+    $bugid=$row["Bugid"];
     $title=$row['title'];
     $bugdesc=$row['bugDesc'];
    // $username=$row['username'];
 
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-        '<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+        '<a href="inactive.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$bugidid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
         $bugdesc.'</td>'.'<td>'."<input type='submit' name='submit' value = 'Activate'>".'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
 ?>
