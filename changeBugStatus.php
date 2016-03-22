@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inactive users</title>
+    <title>Change Bug Fix Status</title>
 </head>
 <body>
 
@@ -53,7 +53,7 @@ WHILE($row=mysqli_fetch_assoc($result))
 
     //$db->close();
 
-        "<input type='submit' name='submit' value = 'Activate'>".
+        "<input type='checkbox' name='Fixed' value = 'Fixed'>".
         '</form>'.'</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 }
 ?>
