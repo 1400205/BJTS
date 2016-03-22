@@ -59,7 +59,7 @@ session_start();
             foreach($_POST['bugid'] as $bugid)
             {
                 //get update query string
-                $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate=CURRENT_DATE, WHERE bugID='$bugid'";
+                $updatebugs="UPDATE bugs SET adminBugFixed = 1 WHERE bugID='$bugid'";
                 if(mysqli_query($db,  $updatebugs)){
 
                     echo "Record updated Successfully";
