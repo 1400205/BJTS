@@ -46,20 +46,21 @@ WHILE($row=mysqli_fetch_assoc($result))
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
-
+    if(!empty($_POST['check_list'])){
+        foreach($_POST['check_list'] as $bugid){
+            echo "$bugid was checked! ";
+        }
+    }
 
 }
+
 echo '<form method="post" action="changeBugStatus.php">'.
 
 
     "<p></p>";
     "<input type='submit' name='submit' value = 'submit'>"
     .'</form>';
-if(!empty($_POST['check_list'])){
-    foreach($_POST['check_list'] as $bugid){
-        echo "$bugid was checked! ";
-    }
-}
+
 
 //  $sqlupdate = 'UPDATE bugs SET userBugFixed="1" WHERE bugID="$bugid"';
 
