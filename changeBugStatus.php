@@ -33,7 +33,7 @@ echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">
 WHILE($row=mysqli_fetch_assoc($result))
 {
     //get the userid, userTpe,userStatus,username
-    $uid=$row['users.uid'];
+    $uid=$row["users.uid"];
     $title=$row['title'];
     $bugdesc=$row['bugDesc'];
    // $username=$row['username'];
