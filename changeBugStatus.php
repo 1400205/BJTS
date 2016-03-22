@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){//to run PHP script on submit
            // echo $bugid."</br>";
 
             //get update query string
-            $updatebugs="UPDATE bugs "."SET userBugFixed='1'"."WHERE bugID=.$bugid". "AND uid=".$_SESSION["userid"];
+            $updatebugs="UPDATE bugs "."SET userBugFixed='1'"."WHERE bugID=.$bugid";
             if(mysqli_query($db,  $updatebugs)){
 
                 echo "Record updated Successfully";
