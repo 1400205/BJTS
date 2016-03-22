@@ -58,13 +58,14 @@ if(isset($_POST['submit'])){//to run PHP script on submit
 // Loop to store and display values of individual checked checkbox.
         foreach($_POST['bugid'] as $bugid)
         {
-            echo $bugid."</br>";
+           // echo $bugid."</br>";
 
             //get update query string
-            $updatebugs="UPDATE bugs SET userBugFixed =".'1'."WHERE bugID=.$bugid";
+            $updatebugs="UPDATE bugs SET userBugFixed ='1' WHERE bugID=.$bugid";
             if(mysqli_query($db,  $updatebugs)){
 
                 echo "Record updated Successfully";
+                echo $bugid."</br>";
             } else{
                 echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
             }
