@@ -42,12 +42,20 @@ WHILE($row=mysqli_fetch_assoc($result))
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
         '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
         $bugdesc.'</td>'.'<td>'.
-        "<input type='checkbox' name='Fixed' value = 'Fixed'>".
+        "<input type='checkbox' name='checklist[]' value = '$bugid'>".
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
+
+
+
+
 }
 echo '<form method="post" action="changeBugStatus.php">'.
+
+
+    "<p></p>";
     "<input type='submit' name='submit' value = 'submit'>"
     .'</form>';
+
 //  $sqlupdate = 'UPDATE bugs SET userBugFixed="1" WHERE bugID="$bugid"';
 
 // if ($db->query($sqlupdate) === TRUE) {
