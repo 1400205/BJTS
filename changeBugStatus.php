@@ -21,7 +21,7 @@ session_start();
 
 include ("connect.php");//Establishing connection with our database
 //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-$sql="SELECT bugID,title,bugDesc FROM users,bugs WHERE users.uid=1";//select required dataset from database
+$sql="SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
 echo '<h3>Inactive Users Pending Activation</h3>';
@@ -33,7 +33,7 @@ echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">
 WHILE($row=mysqli_fetch_assoc($result))
 {
     //get the userid, userTpe,userStatus,username
-    $bugid=$row['bugid'];
+    $bugid=$row['bugID'];
     $title=$row['title'];
     $bugdesc=$row['bugDesc'];
    // $username=$row['username'];
