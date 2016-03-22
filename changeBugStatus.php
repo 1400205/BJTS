@@ -21,7 +21,7 @@ session_start();
 
 include ("connect.php");//Establishing connection with our database
 //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-$sql="SELECT bugID,title,bugDesc FROM bugs WHERE uid=".$_SESSION["userid"]."AND userBugFixed='0'";//select required dataset from database
+$sql="SELECT bugID,title,bugDesc FROM bugs WHERE uid=".$_SESSION["userid"]."AND"." userBugFixed='0'";//select required dataset from database
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
 $result=mysqli_query($db,$sql);//fetch data from database
 
