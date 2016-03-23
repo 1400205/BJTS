@@ -60,32 +60,6 @@ $uid=$_SESSION["userid"];
     <input type="submit" value="Upload file">
     <?php
 
-    //if(isset($_POST['submit'])){//to run PHP script on submit
-        //get variables for comment table
-        //$currentBugID = $_POST['commentRadio'];
-
-       // $comment= $_POST['comment'];
-
-        // echo $currentBugID;
-        //echo $uid;
-        // echo $comment;
-
-       // $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid','$comment')";
-
-        //if(mysqli_query($db, $qry)){
-        //    echo "Records added successfully.";
-
-            //redirect user to login screen
-            //header("location: index.php");
-      //  } else{
-       //     echo "ERROR: Could not be able to execute";//.$qry. mysqli_error($db);
-       // }
-        // Close connection
-        //mysqli_close($db);
-   // }
-
-
-
     // Check if a file has been uploaded
     if(isset($_FILES['uploaded_file'])) {
 
@@ -109,7 +83,7 @@ $uid=$_SESSION["userid"];
             echo $uid."<br>";
 
             // Create the SQL query
-            $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid) VALUES ('$name', '$mime','$size','$data','$uid')";
+            $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid,bugID) VALUES ('$name', '$mime','$size','$data','$uid','$currentBugID')";
 
             // Execute the query
             // Check if it was successfull
@@ -129,7 +103,7 @@ $uid=$_SESSION["userid"];
         mysqli_close($db);
     }
     else {
-        echo 'Error! A file was not sent!';
+       // echo 'Error! A file was not sent!';
     }
     ?>
 
