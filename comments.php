@@ -78,7 +78,7 @@ $uid=$_SESSION["userid"];
         echo $uid;
         echo $comment;
 
-       $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid',$comment)";
+       $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid','$comment')";
 
        if(mysqli_query($db, $qry)){
           echo "Records added successfully.";
