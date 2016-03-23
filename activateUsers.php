@@ -41,7 +41,7 @@ session_start();
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
             '<a href="changeBugStatus.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' . $username.'</td>'.'<td>'.
             $userType.'</td>'.'<td>'.
-            "<input type='checkbox' name='bugid[]' value = '$uid'>".
+            "<input type='checkbox' name='uid[]' value = '$uid'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
@@ -53,14 +53,14 @@ session_start();
     <?php
 
     if(isset($_POST['submit'])){//to run PHP script on submit
-        if(!empty($_POST['bugid'])){
+        if(!empty($_POST['uid'])){
 // Loop to store and display values of individual checked checkbox.
-            foreach($_POST['bugid'] as $bugid)
+            foreach($_POST['uid'] as $uid)
             {
                 //get update query string
-                $updatebugs="UPDATE bugs SET userBugFixed = 1 WHERE bugID='$bugid'";
+                $updateusers="UPDATE users SET userStatus = 1 WHERE uid='$uid'";
 
-                if(mysqli_query($db,  $updatebugs)){
+                if(mysqli_query($db,  $updateusers)){
 
                 } else{
                     echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
