@@ -49,7 +49,7 @@
 
     //if(isset($_POST['submit'])){//to run PHP script on submit
         //get variables for comment table
-        $currentBugID = $_POST['commentRadio'];
+        //$currentBugID = $_POST['commentRadio'];
 
        // $comment= $_POST['comment'];
 
@@ -70,6 +70,53 @@
         // Close connection
         //mysqli_close($db);
    // }
+
+
+
+    // Check if a file has been uploaded
+    if(isset($_FILES['uploaded_file'])) {
+
+        //get variables for comment table
+        $currentBugID = $_POST['commentRadio'];
+
+        // Make sure the file was sent without errors
+        if($_FILES['uploaded_file']['error'] == 0) {
+
+            // Gather all required data
+            $name = $_FILES['uploaded_file']['name'];
+            $mime = $_FILES['uploaded_file']['type'];
+            $data =$_FILES  ['uploaded_file']['tmp_name'];
+            $size = intval($_FILES['uploaded_file']['size']);
+            $currentBugID = $_POST['commentRadio'];
+            echo $name."<br>";
+            echo $mime."<br>";
+            echo $data."<br>";
+            echo $size."<br>";
+            echo $uid."<br>";
+
+            // Create the SQL query
+            $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid) VALUES ('$name', '$mime','$size','$data','$uid')";
+
+            // Execute the query
+            // Check if it was successfull
+            if (mysqli_query($db, $qry)){
+                echo 'Success! Your file was successfully added!';
+            }
+            else {
+                echo "ERROR: Could not be able to execute".$qry. mysqli_error($db);
+            }
+        }
+        else {
+            echo 'An error accured while the file was being uploaded. '
+                . 'Error code: '. intval($_FILES['uploaded_file']['error']);
+        }
+
+        // Close the mysql connection
+        mysqli_close($db);
+    }
+    else {
+        echo 'Error! A file was not sent!';
+    }
     ?>
 
 
