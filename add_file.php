@@ -18,6 +18,11 @@ if(isset($_FILES['uploaded_file'])) {
         $mime = $_FILES['uploaded_file']['type'];
         $data =$_FILES  ['uploaded_file']['tmp_name'];
         $size = intval($_FILES['uploaded_file']['size']);
+        echo $name;
+        echo $mime;
+        echo $data;
+        echo $size;
+        echo $uid;
 
         // Create the SQL query
         $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid) VALUES ('$name', '$mime','$size','$data','$uid')";
