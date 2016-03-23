@@ -16,7 +16,7 @@ session_start();
     <title>Admin Change Bug Fixed-Status</title>
 </head>
 <body>
-<form method="post" action="adminChangeBugStatus.php">
+<form method="post" action="comments.php">
     <?php
     /**
      * Created by PhpStorm.
