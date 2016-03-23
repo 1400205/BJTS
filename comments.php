@@ -1,6 +1,7 @@
 <?php
 session_start();
 ?>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -8,6 +9,7 @@ session_start();
  * Date: 23/03/2016
  * Time: 08:40
  */
+$uid=$_SESSION["userid"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +71,7 @@ session_start();
     if(isset($_POST['submit'])){//to run PHP script on submit
         //get variables for comment table
         $currentBugID = $_POST['commentRadio'];
-        $uid=$_SESSION["userid"];
+
         $comment= $_POST['comment'];
 
         echo $currentBugID;
