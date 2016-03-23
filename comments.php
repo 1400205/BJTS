@@ -60,7 +60,8 @@ session_start();
     ?>
 
         <p>Comments</p>
-     <textarea >
+    <textarea name="comment" cols="40" rows="5"  ></textarea>
+    <p></p>
     <input type="submit" name="submit" value="submit">
     <?php
 
