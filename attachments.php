@@ -18,7 +18,7 @@ $uid=$_SESSION["userid"];
     <title>Attach file to bug</title>
 </head>
 <body>
-<form method="post" action="attachements.php">
+<form method="post" action="attachments.php">
     <?php
     /**
      * Created by PhpStorm.
