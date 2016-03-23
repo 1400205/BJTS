@@ -49,7 +49,7 @@ session_start();
 
     }
     ?>
-    <input type="date" data-date-inline-picker="true" name="fixedDate" />
+
     <input type="submit" name="submit" value="submit">
     <?php
 
