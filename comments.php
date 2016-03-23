@@ -68,36 +68,24 @@ session_start();
     if(isset($_POST['submit'])){//to run PHP script on submit
         $currentBugID = $_POST['comment'];
 
-        if(!empty($_POST['bugid'])){
-            $commentDate=date("Y/m/d");
+        if ("$currentBugID" == "$bugid") {
+            $commentDate = date("Y/m/d");
+            echo "good";
 // Loop to store and display values of individual checked checkbox.
-            foreach($_POST['bugid'] as $bugid)
-            {
-                //get update query string
-                $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate='$fixedDate' WHERE bugID='$bugid'";
-                mysqli_query($db,  $updatebugs);
-                if (mysqli_query($db,  $updatebugs)){
+            // foreach($_POST['bugid'] as $bugid)
 
+            //get update query string
+            // $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate='$fixedDate' WHERE bugID='$bugid'";
+            // mysqli_query($db,  $updatebugs);
+            // if (mysqli_query($db,  $updatebugs)){
 
-                }
-
-                elseif(!(mysqli_query($db,  $updatebugs)))
-
-                {
-                    echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
-                }
-                else
-                {
-                    echo "Record added successfully"/**$qry. mysqli_error($db)*/;
-                }
+        }
 
 
                 //echo $bugid."</br>";
 
                 // Close connection
-                //mysqli_close($db);
-            }
-        }
+                //mysqli_close($db)
     }
     ?>
 
