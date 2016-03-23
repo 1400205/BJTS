@@ -42,10 +42,12 @@ $uid=$_SESSION["userid"];
 
             $qry = "INSERT  INTO upload(fname, fsize, ftype,content) VALUES ('$fileName', '$fileSize','$fileType','$content')";
 
-            (mysqli_query($db, $qry)) or die('Error, query failed');
-            include 'library/closedb.php';
+            (mysqli_query($db, $qry)) or die($qry. mysqli_error($db));
 
-            echo "<br>File $fileName uploaded<br>";
+        // Close connection
+        mysqli_close($db);
+
+
 
         }
 
