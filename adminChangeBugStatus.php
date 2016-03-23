@@ -65,7 +65,7 @@ session_start();
                     echo "Record updated Successfully";
                     echo $bugid."</br>";
                     // Close connection
-                    mysqli_close($db);
+                    //mysqli_close($db);
                 } else{
                     echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
                 }
