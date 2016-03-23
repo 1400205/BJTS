@@ -50,7 +50,7 @@ session_start();
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
             '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
             $bugdesc.'</td>'.'<td>'.
-            "<input type=radio' name='comment' value = '$bugid'>".
+            "<input type=radio' name='comment'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
