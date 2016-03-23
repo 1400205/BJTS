@@ -68,7 +68,7 @@ session_start();
     if(isset($_POST['submit'])){//to run PHP script on submit
         $currentBugID = $_POST['commentRadio'];
 
-        echo '$currentBugID';
+        echo $currentBugID;
 
 
         //if ("$currentBugID" == "$bugid") {
