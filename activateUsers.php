@@ -8,7 +8,7 @@ session_start();
     <title>Change Bug Fix Status</title>
 </head>
 <body>
-<form method="post" action="changeBugStatus.php">
+<form method="post" action="activateUsers.php">
     <?php
     /**
      * Created by PhpStorm.
