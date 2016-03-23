@@ -58,8 +58,8 @@ session_start();
     }
     //echo '<a href="commen">';
     ?>
-    <textarea rows="5" cols="60">
-        <p></p>
+
+        <p>Comments</p>
     <input type="submit" name="submit" value="submit">
     <?php
 
