@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Change Bug Fix Status</title>
+    <title>Activate Users</title>
 </head>
 <body>
 <form method="post" action="activateUsers.php">
@@ -25,8 +25,8 @@ session_start();
     $result=mysqli_query($db,$sql);//fetch data from database
 
     echo '<h3>Change Bug Fix Status</h3>'.$_SESSION["$uid"];
-    echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
-        '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
+    echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'User ID'.
+        '</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'User Type'.
 
         '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
     //loop through the database and fetch all users with userStatus=0
@@ -34,7 +34,7 @@ session_start();
     {
         //get the userid, userTpe,userStatus,username
         $uid=$row['uid'];
-        $username=$row['$username'];
+        $username=$row['username'];
         $userType=$row['userType'];
         // $username=$row['username'];
 
