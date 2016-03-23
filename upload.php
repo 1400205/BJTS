@@ -75,12 +75,14 @@ $uid=$_SESSION["userid"];
             $data =$_FILES  ['uploaded_file']['tmp_name'];
             $size = intval($_FILES['uploaded_file']['size']);
             $currentBugID = $_POST['commentRadio'];
-            echo $name."<br>";
-            echo $mime."<br>";
-            echo $data."<br>";
-            echo $size."<br>";
-            echo  $currentBugID;
-            echo $uid."<br>";
+
+            //displayed data just to ensure the variables received data
+            //echo $name."<br>";
+            //echo $mime."<br>";
+           // echo $data."<br>";
+           // echo $size."<br>";
+            //echo  $currentBugID;
+            //echo $uid."<br>";
 
             // Create the SQL query
             $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid,bugID) VALUES ('$name', '$mime','$size','$data','$uid','$currentBugID')";
