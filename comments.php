@@ -58,13 +58,13 @@ session_start();
     }
     //echo '<a href="commen">';
     ?>
-
+    <input type="text" name="comment" value="enter your comment here">
     <input type="submit" name="submit" value="submit">
     <?php
 
     if(isset($_POST['submit'])){//to run PHP script on submit
         if(!empty($_POST['bugid'])){
-            $fixedDate=date("Y/m/d");
+            $commentDate=date("Y/m/d");
 // Loop to store and display values of individual checked checkbox.
             foreach($_POST['bugid'] as $bugid)
             {
