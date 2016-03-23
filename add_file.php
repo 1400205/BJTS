@@ -17,7 +17,7 @@ if(isset($_FILES['uploaded_file'])) {
         $size = intval($_FILES['uploaded_file']['size']);
 
         // Create the SQL query
-        $sql = "INSERT INTO `file` (`name`, `mime`, `size`, `data`, `created` VALUES ('{$name}', '{$mime}', {$size}, '{$data}', NOW())";
+        $sql = "INSERT INTO file (name,mime, size, data, created VALUES ('$name', '$mime', '$size', '$data', NOW())";
 
         // Execute the query
        // $result = $dbLink->query($query);
