@@ -1,39 +1,33 @@
 <?php
+include("connect.php");
 // Check if a file has been uploaded
 if(isset($_FILES['uploaded_file'])) {
     // Make sure the file was sent without errors
     if($_FILES['uploaded_file']['error'] == 0) {
         // Connect to the database
-        $dbLink = new mysqli('127.0.0.1', 'user', 'pwd', 'myTable');
-        if(mysqli_connect_errno()) {
-            die("MySQL connection failed: ". mysqli_connect_error());
-        }
+        //$dbLink = new mysqli('127.0.0.1', 'user', 'pwd', 'myTable');
+       // if(mysqli_connect_errno()) {
+          //  die("MySQL connection failed: ". mysqli_connect_error());
+       // }
 
         // Gather all required data
-        $name = $dbLink->real_escape_string($_FILES['uploaded_file']['name']);
-        $mime = $dbLink->real_escape_string($_FILES['uploaded_file']['type']);
-        $data = $dbLink->real_escape_string(file_get_contents($_FILES  ['uploaded_file']['tmp_name']));
+        $name = mysqli_real_escape_string($_FILES['uploaded_file']['name']);
+        $mime = mysqli_real_escape_string($_FILES['uploaded_file']['type']);
+        $data = mysqli_real_escape_string(file_get_contents($_FILES  ['uploaded_file']['tmp_name']));
         $size = intval($_FILES['uploaded_file']['size']);
 
         // Create the SQL query
-        $query = "
-            INSERT INTO `file` (
-                `name`, `mime`, `size`, `data`, `created`
-            )
-            VALUES (
-                '{$name}', '{$mime}', {$size}, '{$data}', NOW()
-            )";
+        $sql = "INSERT INTO `file` (`name`, `mime`, `size`, `data`, `created` VALUES ('{$name}', '{$mime}', {$size}, '{$data}', NOW())";
 
         // Execute the query
-        $result = $dbLink->query($query);
+       // $result = $dbLink->query($query);
 
         // Check if it was successfull
-        if($result) {
+        if (mysqli_query($db, $qry)){
             echo 'Success! Your file was successfully added!';
         }
         else {
-            echo 'Error! Failed to insert the file'
-                . "<pre>{$dbLink->error}</pre>";
+            echo "ERROR: Could not be able to execute".$qry. mysqli_error($db);
         }
     }
     else {
@@ -42,7 +36,7 @@ if(isset($_FILES['uploaded_file'])) {
     }
 
     // Close the mysql connection
-    $dbLink->close();
+    mysqli_close($db);
 }
 else {
     echo 'Error! A file was not sent!';
