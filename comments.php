@@ -33,7 +33,7 @@ session_start();
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Comment on bugs</h3>'.$_SESSION["$uid"];
+    echo '<h3>Comment on bugs </h3>'.$_SESSION["$uid"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
         '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
@@ -50,7 +50,7 @@ session_start();
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
             '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
             $bugdesc.'</td>'.'<td>'.
-            "<input type='checkbox' name='bugid[]' value = '$bugid'>".
+            "<input type=radio' name='comment' value = '$bugid'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
