@@ -11,9 +11,9 @@ if(isset($_FILES['uploaded_file'])) {
        // }
 
         // Gather all required data
-        $name = mysqli_real_escape_string($_FILES['uploaded_file']['name']);
-        $mime = mysqli_real_escape_string($_FILES['uploaded_file']['type']);
-        $data = mysqli_real_escape_string(file_get_contents($_FILES  ['uploaded_file']['tmp_name']));
+        $name = $_FILES['uploaded_file']['name'];
+        $mime = $_FILES['uploaded_file']['type'];
+        $data =$_FILES  ['uploaded_file']['tmp_name'];
         $size = intval($_FILES['uploaded_file']['size']);
 
         // Create the SQL query
