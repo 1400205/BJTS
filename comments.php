@@ -58,7 +58,7 @@ session_start();
     }
     //echo '<a href="commen">';
     ?>
-    <input type="text" name="comment" value="enter your comment here">
+    <textarea rows="5" cols="60" value="enter your comment here"> <br>
     <input type="submit" name="submit" value="submit">
     <?php
 
