@@ -35,7 +35,7 @@ if(isset($_FILES['uploaded_file'])) {
         echo $uid."<br>";
 
         // Create the SQL query
-        $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata) VALUES ('$name', '$mime','$size','$data')";
+        $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid) VALUES ('$name', '$mime','$size','$data','$uid')";
 
         // Execute the query
         // Check if it was successfull
