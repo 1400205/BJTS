@@ -7,8 +7,11 @@
 
 
 </head>
-<?php
-    include ("connect.php");
+<
+<body>
+
+?php
+include ("connect.php");
 if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
 $fileName = $_FILES['userfile']['name'];
@@ -37,9 +40,6 @@ include 'library/closedb.php';
 echo "<br>File $fileName uploaded<br>";
 }
 ?>
-<body>
-
-
 
 
 <form method="post" enctype="multipart/form-data">
