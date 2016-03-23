@@ -20,6 +20,8 @@ $uid=$_SESSION["userid"];
 <body>
 
     <form method="post" enctype="multipart/form-data"  action="upload.php">
+
+
     <?php
     if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0) {
         $fileName = $_FILES['userfile']['name'];
