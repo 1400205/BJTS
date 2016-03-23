@@ -1,4 +1,4 @@
-<form method="post" action="comments.php">
+<form action="add_file.php" method="post" enctype="multipart/form-data">
     <?php
     /**
      * Created by PhpStorm.
@@ -42,10 +42,9 @@
     //echo '<a href="commen">';
     ?>
 
-    <p>Comments</p>
-    <textarea name="comment" cols="40" rows="5"  ></textarea>
+    <input type="file" name="uploaded_file">
     <p></p>
-    <input type="submit" name="submit" value="submit">
+    <input type="submit" value="Upload file">
     <?php
 
     if(isset($_POST['submit'])){//to run PHP script on submit
