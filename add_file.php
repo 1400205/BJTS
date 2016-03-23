@@ -18,12 +18,12 @@ if(isset($_FILES['uploaded_file'])) {
 
         // Create the SQL query
        // $sql = "INSERT INTO file (name,mime, size, data, created VALUES ('$name', '$mime', '$size', '$data')";
-         echo fname;
-        echo $mime;
-        echo $size;
-        echo $data;
+         echo fname."<br>";
+        echo $mime."<br>";
+        echo $size."<br>";
+        echo $data."<br>";
 
-        $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,fcreated) VALUES ('$name', '$mime','$size','$data')";
+        $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata) VALUES ('$name', '$mime','$size','$data')";
 
         // Execute the query
        // $result = $dbLink->query($query);
