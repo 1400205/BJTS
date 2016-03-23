@@ -20,9 +20,8 @@ session_start();
      */
 
     include ("connect.php");//Establishing connection with our database
-    //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-    $sql="SELECT bugID,title,bugDesc FROM bugs WHERE userBugFixed=0 AND uid=".$_SESSION["userid"];//select required dataset from database
-    //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
+
+    $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus='0'";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
     echo '<h3>Change Bug Fix Status</h3>'.$_SESSION["$uid"];
@@ -34,15 +33,15 @@ session_start();
     WHILE($row=mysqli_fetch_assoc($result))
     {
         //get the userid, userTpe,userStatus,username
-        $bugid=$row['bugID'];
-        $title=$row['title'];
-        $bugdesc=$row['bugDesc'];
+        $uid=$row['uid'];
+        $username=$row['$username'];
+        $userType=$row['userType'];
         // $username=$row['username'];
 
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-            '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
-            $bugdesc.'</td>'.'<td>'.
-            "<input type='checkbox' name='bugid[]' value = '$bugid'>".
+            '<a href="changeBugStatus.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' . $username.'</td>'.'<td>'.
+            $userType.'</td>'.'<td>'.
+            "<input type='checkbox' name='bugid[]' value = '$uid'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
