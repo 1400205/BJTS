@@ -5,10 +5,10 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Change Bug Fix Status</title>
+    <title>Admin Change Bug Fixed-Status</title>
 </head>
 <body>
-<form method="post" action="changeBugStatus.php">
+<form method="post" action="adminChangeBugStatus.php">
     <?php
     /**
      * Created by PhpStorm.
@@ -21,11 +21,11 @@ session_start();
 
     include ("connect.php");//Establishing connection with our database
     //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-    $sql="SELECT bugID,title,bugDesc FROM bugs WHERE userBugFixed='0' AND uid=".$_SESSION["userid"];//select required dataset from database
+    $sql="SELECT bugID,title,bugDesc FROM bugs WHERE adminBugFixed='0' AND uid=".$_SESSION["userid"];//select required dataset from database
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Change Bug Fix Status</h3>'.$_SESSION["$uid"];
+    echo '<h3>Admin Change Bug Fixed-Status</h3>'.$_SESSION["$uid"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
         '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
