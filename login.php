@@ -40,7 +40,7 @@ if(mysqli_num_rows($result) == 1  and $userstatus==1) {
 
     $usertype = $row['userType'];//get user type
     $userstatus = $row['userStatus'];//get user status
-    header("location: attachments.php"); // Redirecting To another Page
+    header("location: comments.php"); // Redirecting To another Page
 
     $_SESSION["uname"] = $username;
     $_SESSION["pwd"] = $password;
