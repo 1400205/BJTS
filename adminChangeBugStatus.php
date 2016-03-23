@@ -63,14 +63,18 @@ session_start();
                 $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate='$fixedDate' WHERE bugID='$bugid'";
                 mysqli_query($db,  $updatebugs);
                 if (mysqli_query($db,  $updatebugs)){
-                    echo "Record updated Successfully";
+
 
                 }
 
-                else
+                elseif(!(mysqli_query($db,  $updatebugs)))
 
                 {
                     echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
+                }
+                else
+                {
+                    echo "Record added successfully"/**$qry. mysqli_error($db)*/;
                 }
 
 
