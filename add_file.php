@@ -31,6 +31,7 @@ if(isset($_FILES['uploaded_file'])) {
         $mime = $_FILES['uploaded_file']['type'];
         $data =$_FILES  ['uploaded_file']['tmp_name'];
         $size = intval($_FILES['uploaded_file']['size']);
+        $currentBugID = $_POST['commentRadio'];
         echo $name."<br>";
         echo $mime."<br>";
         echo $data."<br>";
