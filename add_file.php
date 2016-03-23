@@ -2,10 +2,20 @@
 session_start();
 ?>
 <?php
+/**
+ * Created by PhpStorm.
+ * User: prosper
+ * Date: 23/03/2016
+ * Time: 08:40
+ */
+$uid=$_SESSION["userid"];
+?>
+<?php
+
 
 //connection string
 include("connect.php");
-$uid=$_SESSION["userid"];
+
 
 // Check if a file has been uploaded
 if(isset($_FILES['uploaded_file'])) {
@@ -18,11 +28,11 @@ if(isset($_FILES['uploaded_file'])) {
         $mime = $_FILES['uploaded_file']['type'];
         $data =$_FILES  ['uploaded_file']['tmp_name'];
         $size = intval($_FILES['uploaded_file']['size']);
-        echo $name;
-        echo $mime;
-        echo $data;
-        echo $size;
-        echo $uid;
+        echo $name."<br>";
+        echo $mime."<br>";
+        echo $data."<br>";
+        echo $size."<br>";
+        echo $uid."<br>";
 
         // Create the SQL query
         $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid) VALUES ('$name', '$mime','$size','$data','$uid')";
