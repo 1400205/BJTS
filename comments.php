@@ -69,7 +69,7 @@ session_start();
     if(isset($_POST['submit'])){//to run PHP script on submit
         //get variables for comment table
         $currentBugID = $_POST['commentRadio'];
-        $uid=$_SESSION["$userid"];
+        $uid=$_SESSION["userid"];
         $comment= $_POST['comment'];
 
         echo $currentBugID;
