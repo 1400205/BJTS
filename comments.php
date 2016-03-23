@@ -33,11 +33,12 @@ session_start();
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Comment on bugs </h3>'.$_SESSION["$uid"];
+    echo '<h3>Comment on bugs </h3>'.$_SESSION["$userid"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
         '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
         '</th>'.'<th>'.'Select Bug'.'</th>'.'</table>';
+
     //loop through the database and fetch all users with userStatus=0
     WHILE($row=mysqli_fetch_assoc($result))
     {
@@ -66,29 +67,23 @@ session_start();
     <?php
 
     if(isset($_POST['submit'])){//to run PHP script on submit
+        //get variables for comment table
         $currentBugID = $_POST['commentRadio'];
+        $uid=$_SESSION["$userid"];
+        $comment= $_POST['comment'];
 
-        echo $currentBugID;
+       // echo $currentBugID;
 
+        $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid',$comment)";
 
-        //if ("$currentBugID" == "$bugid") {
-           // $commentDate = date("Y/m/d");
-           // echo "good";
-// Loop to store and display values of individual checked checkbox.
-            // foreach($_POST['bugid'] as $bugid)
+        if(mysqli_query($db, $qry)){
+            $_SESSION['success']= "Records added successfully.";
 
-            //get update query string
-            // $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate='$fixedDate' WHERE bugID='$bugid'";
-            // mysqli_query($db,  $updatebugs);
-            // if (mysqli_query($db,  $updatebugs)){
-
-      //  }
-
-
-                //echo $bugid."</br>";
-
-                // Close connection
-                //mysqli_close($db)
+            //redirect user to login screen
+            header("location: index.php");
+        } else{
+            echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
+        }
     }
     ?>
 
