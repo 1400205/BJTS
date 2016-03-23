@@ -59,17 +59,18 @@ session_start();
             foreach($_POST['bugid'] as $bugid)
             {
                 //get update query string
-                $updatebugs="UPDATE bugs SET userBugFixed = 1 WHERE bugID='$bugid'";
+                $updatebugs="UPDATE bugs SET adminBugFixed = 1 WHERE bugID='$bugid'";
                 if(mysqli_query($db,  $updatebugs)){
 
                     echo "Record updated Successfully";
-                    // echo $bugid."</br>";
+                    echo $bugid."</br>";
+                    // Close connection
+                    mysqli_close($db);
                 } else{
                     echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
                 }
 
-                // Close connection
-                mysqli_close($db);
+
             }
         }
     }
