@@ -55,11 +55,12 @@ session_start();
 
     if(isset($_POST['submit'])){//to run PHP script on submit
         if(!empty($_POST['bugid'])){
+            $fixedDate=$_POST["fixedDate"];
 // Loop to store and display values of individual checked checkbox.
             foreach($_POST['bugid'] as $bugid)
             {
                 //get update query string
-                $updatebugs="UPDATE bugs SET adminBugFixed = 1, WHERE bugID='$bugid'";
+                $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate='$fixedDate' WHERE bugID='$bugid'";
                 if(mysqli_query($db,  $updatebugs)){
 
                     echo "Record updated Successfully";
