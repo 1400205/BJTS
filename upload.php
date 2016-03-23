@@ -32,24 +32,24 @@ $uid=$_SESSION["userid"];
         $content = addslashes($content);
         fclose($fp);
 
-         {
 
                 $fileName = addslashes($fileName);
-            }
-            include 'library/config.php';
-            include 'library/opendb.php';
+
 
 
             $qry = "INSERT  INTO upload(fname, fsize, ftype,content) VALUES ('$fileName', '$fileSize','$fileType','$content')";
 
-            (mysqli_query($db, $qry)) or die($qry. mysqli_error($db));
+        if(mysqli_query($db, $qry)){
+            echo "Records added successfully.";
 
+            //redirect user to login screen
+            //header("location: index.php");
+        } else{
+            echo "ERROR: Could not be able to execute".$qry. mysqli_error($db);
+        }
         // Close connection
         mysqli_close($db);
-
-
-
-        }
+    }
 
     ?>
 
