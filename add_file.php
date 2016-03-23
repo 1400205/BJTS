@@ -43,7 +43,7 @@ if(isset($_FILES['uploaded_file'])) {
             echo 'Success! Your file was successfully added!';
         }
         else {
-            echo "ERROR: Could not be able to execute";//.$qry. mysqli_error($db);
+            echo "ERROR: Could not be able to execute".$qry. mysqli_error($db);
         }
     }
     else {
