@@ -84,7 +84,7 @@ $uid=$_SESSION["userid"];
         include 'library/config.php';
         include 'library/opendb.php';
 
-        $sql = "INSERT INTO upload (name, size, type, content ) ".
+        $sql = "INSERT INTO upload (fname, fsize, ftype, content ) ".
             "VALUES ('$fileName', '$fileSize', '$fileType', '$content')";
 
         mysql_query($db,$sql) or die('Error, query failed');
