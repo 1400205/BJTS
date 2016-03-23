@@ -63,15 +63,20 @@ session_start();
                 $updatebugs="UPDATE bugs SET adminBugFixed = 1,bugFixedDate='$fixedDate' WHERE bugID='$bugid'";
                 if(mysqli_query($db,  $updatebugs)){
 
-                    echo "Record updated Successfully";
-                    echo $bugid."</br>";
-                    // Close connection
-                    //mysqli_close($db);
-                } else{
+
+                }
+
+                else
+
+                {
                     echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
                 }
 
+                echo "Record updated Successfully";
+                echo $bugid."</br>";
 
+                // Close connection
+                //mysqli_close($db);
             }
         }
     }
