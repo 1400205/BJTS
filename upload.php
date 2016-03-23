@@ -63,36 +63,37 @@ $uid=$_SESSION["userid"];
     //echo '<a href="commen">';
     ?>
 
-    <p>Comments</p>
-    <textarea name="comment" cols="40" rows="5"  ></textarea>
-    <p></p>
-    <input type="submit" name="submit" value="submit">
-    <?php
 
-    if(isset($_POST['submit'])){//to run PHP script on submit
-        //get variables for comment table
-        $currentBugID = $_POST['commentRadio'];
 
-        $comment= $_POST['comment'];
+    if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
+    {
+        $fileName = $_FILES['userfile']['name'];
+        $tmpName  = $_FILES['userfile']['tmp_name'];
+        $fileSize = $_FILES['userfile']['size'];
+        $fileType = $_FILES['userfile']['type'];
 
-        // echo $currentBugID;
-        //echo $uid;
-        // echo $comment;
+        $fp      = fopen($tmpName, 'r');
+        $content = fread($fp, filesize($tmpName));
+        $content = addslashes($content);
+        fclose($fp);
 
-        $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid','$comment')";
-
-        if(mysqli_query($db, $qry)){
-            echo "Records added successfully.";
-
-            //redirect user to login screen
-            //header("location: index.php");
-        } else{
-            echo "ERROR: Could not be able to execute" .$qry. mysqli_error($db);
+        if(!get_magic_quotes_gpc())
+        {
+            $fileName = addslashes($fileName);
         }
-        // Close connection
-        mysqli_close($db);
+        include 'library/config.php';
+        include 'library/opendb.php';
+
+        $sql = "INSERT INTO upload (name, size, type, content ) ".
+            "VALUES ('$fileName', '$fileSize', '$fileType', '$content')";
+
+        mysql_query($db,$sql) or die('Error, query failed');
+        include 'library/closedb.php';
+
+        echo "<br>File $fileName uploaded<br>";
+
     }
-    ?>
+
 
 
         <table width="350" border="0" cellpadding="1" cellspacing="1" class="box">
