@@ -56,7 +56,7 @@ session_start();
 
 
     }
-    echo '<a href="commen">';
+    //echo '<a href="commen">';
     ?>
 
     <input type="submit" name="submit" value="submit">
