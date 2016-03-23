@@ -68,10 +68,12 @@ session_start();
     if(isset($_POST['submit'])){//to run PHP script on submit
         $currentBugID = $_POST['commentRadio'];
 
+        echo '$currentBugID';
 
-        if ("$currentBugID" == "$bugid") {
-            $commentDate = date("Y/m/d");
-            echo "good";
+
+        //if ("$currentBugID" == "$bugid") {
+           // $commentDate = date("Y/m/d");
+           // echo "good";
 // Loop to store and display values of individual checked checkbox.
             // foreach($_POST['bugid'] as $bugid)
 
@@ -80,7 +82,7 @@ session_start();
             // mysqli_query($db,  $updatebugs);
             // if (mysqli_query($db,  $updatebugs)){
 
-        }
+      //  }
 
 
                 //echo $bugid."</br>";
