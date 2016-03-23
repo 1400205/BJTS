@@ -1,3 +1,16 @@
+<?php
+session_start();
+?>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: prosper
+ * Date: 23/03/2016
+ * Time: 08:40
+ */
+$uid=$_SESSION["userid"];
+?>
+
 <form action="upload.php" method="post" enctype="multipart/form-data">
     <?php
     /**
@@ -92,6 +105,7 @@
             echo $mime."<br>";
             echo $data."<br>";
             echo $size."<br>";
+            echo  $currentBugID;
             echo $uid."<br>";
 
             // Create the SQL query
