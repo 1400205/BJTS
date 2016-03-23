@@ -1,4 +1,4 @@
-<form action="add_file.php" method="post" enctype="multipart/form-data">
+<form action="upload.php" method="post" enctype="multipart/form-data">
     <?php
     /**
      * Created by PhpStorm.
