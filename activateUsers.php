@@ -69,6 +69,7 @@ session_start();
                 // Close connection
                 // mysqli_close($db);
             }
+            echo "Update was successful";
         }
     }
     ?>
