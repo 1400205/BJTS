@@ -78,16 +78,16 @@ $uid=$_SESSION["userid"];
         echo $uid;
         echo $comment;
 
-       // $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid',$comment)";
+       $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid',$comment)";
 
-       // if(mysqli_query($db, $qry)){
-           // $_SESSION['success']= "Records added successfully.";
+       if(mysqli_query($db, $qry)){
+          echo "Records added successfully.";
 
             //redirect user to login screen
             //header("location: index.php");
-       // } else{
+        } else{
             echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
-       // }
+        }
     }
     ?>
 
