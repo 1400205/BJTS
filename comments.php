@@ -82,7 +82,7 @@ session_start();
            // $_SESSION['success']= "Records added successfully.";
 
             //redirect user to login screen
-            header("location: index.php");
+            //header("location: index.php");
        // } else{
             echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
        // }
