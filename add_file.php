@@ -1,8 +1,11 @@
 <?php
+session_start();
+?>
+<?php
 
 //connection string
 include("connect.php");
-
+$uid=$_SESSION["userid"];
 
 // Check if a file has been uploaded
 if(isset($_FILES['uploaded_file'])) {
@@ -17,7 +20,7 @@ if(isset($_FILES['uploaded_file'])) {
         $size = intval($_FILES['uploaded_file']['size']);
 
         // Create the SQL query
-        $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata) VALUES ('$name', '$mime','$size','$data')";
+        $qry="INSERT  INTO myfile(fname, fmime, fsize,fdata,uid) VALUES ('$name', '$mime','$size','$data','$uid')";
 
         // Execute the query
         // Check if it was successfull
