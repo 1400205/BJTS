@@ -60,9 +60,9 @@ if(isset($_POST['submit'])){//to run PHP script on submit
         {
             //get update query string
             $updatebugs="UPDATE bugs SET userBugFixed = 1 WHERE bugID='$bugid'";
+            mysqli_query($db,  $updatebugs);
             if(mysqli_query($db,  $updatebugs)){
-
-
+                echo "Record updated Successfully";
             } else{
                 echo "ERROR: Could not be able to execute"/**$qry. mysqli_error($db)*/;
             }

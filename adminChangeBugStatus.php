@@ -74,7 +74,7 @@ session_start();
                 }
 
 
-                echo $bugid."</br>";
+                //echo $bugid."</br>";
 
                 // Close connection
                 //mysqli_close($db);
