@@ -37,7 +37,7 @@ session_start();
         $bugid=$row['bugID'];
         $title=$row['title'];
         $bugdesc=$row['bugDesc'];
-        // $username=$row['username'];
+        // $username=$row['username];
 
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
             '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
