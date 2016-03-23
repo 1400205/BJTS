@@ -21,34 +21,33 @@ $uid=$_SESSION["userid"];
 
     <form method="post" enctype="multipart/form-data"  action="upload.php">
     <?php
-    if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
-    {
+    if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0) {
         $fileName = $_FILES['userfile']['name'];
-        $tmpName  = $_FILES['userfile']['tmp_name'];
+        $tmpName = $_FILES['userfile']['tmp_name'];
         $fileSize = $_FILES['userfile']['size'];
         $fileType = $_FILES['userfile']['type'];
 
-        $fp      = fopen($tmpName, 'r');
+        $fp = fopen($tmpName, 'r');
         $content = fread($fp, filesize($tmpName));
         $content = addslashes($content);
         fclose($fp);
 
-        if(!get_magic_quotes_gpc())
-        {
-            $fileName = addslashes($fileName);
+         {
+
+                $fileName = addslashes($fileName);
+            }
+            include 'library/config.php';
+            include 'library/opendb.php';
+
+
+            $qry = "INSERT  INTO upload(fname, fsize, ftype,content) VALUES ('$fileName', '$fileSize','$fileType','$content')";
+
+            (mysqli_query($db, $qry)) or die('Error, query failed');
+            include 'library/closedb.php';
+
+            echo "<br>File $fileName uploaded<br>";
+
         }
-        include 'library/config.php';
-        include 'library/opendb.php';
-
-        $sql = "INSERT INTO upload (fname, fsize, ftype, content ) ".
-            "VALUES ('$fileName', '$fileSize', '$fileType', '$content')";
-
-        mysql_query($db,$sql) or die('Error, query failed');
-        include 'library/closedb.php';
-
-        echo "<br>File $fileName uploaded<br>";
-
-    }
 
     ?>
 
