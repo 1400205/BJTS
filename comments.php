@@ -74,9 +74,9 @@ $uid=$_SESSION["userid"];
 
         $comment= $_POST['comment'];
 
-        echo $currentBugID;
-        echo $uid;
-        echo $comment;
+       // echo $currentBugID;
+        //echo $uid;
+       // echo $comment;
 
        $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid','$comment')";
 
