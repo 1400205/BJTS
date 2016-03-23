@@ -33,11 +33,11 @@ session_start();
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Admin Change Bug Fixed-Status</h3>'.$_SESSION["$uid"];
+    echo '<h3>Comment on bugs</h3>'.$_SESSION["$uid"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
         '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
-        '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
+        '</th>'.'<th>'.'Select Bug'.'</th>'.'</table>';
     //loop through the database and fetch all users with userStatus=0
     WHILE($row=mysqli_fetch_assoc($result))
     {
