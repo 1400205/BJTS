@@ -30,6 +30,10 @@ session_start();
         //get the result
         $result=mysqli_query($db,$sql);//fetch data from database
 
+        echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
+            '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
+
+            '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
         //loop through the database and fetch all users with userStatus=0
         WHILE($row=mysqli_fetch_assoc($result))
         {
@@ -40,7 +44,7 @@ session_start();
             // $username=$row['username'];
 
             echo
-                '<a href="mybuglist.php?uid="'.$bugid .''.$bugid.' ' . $title.' '. $bugdes.'</a>';
+                '<a href="mybuglist.php?uid="'.$bugid.'<br>'.$bugid.'<br>' . $title.'<br>'. $bugdes.'</a>'.'</br>';
 
 
 
