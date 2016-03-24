@@ -26,7 +26,7 @@
     <form method="post" action="Registrations.php">
         <fieldset>
         <legend>Create Account</legend>
-        <lable for="username">User Name</lable><br/>
+            <label>Username:</label><br><br/>
         <input type="text" name="username"/>
         <p></p>
         <lable for="Email">Email</lable><br/>
