@@ -36,7 +36,7 @@ $usertype = $row['userType'];//get user type
 $userstatus = $row['userStatus'];//get user status
 $userid = $row['uid'];//get user id
 
-if(mysqli_num_rows($result) == 1  and $userstatus==1 and $usertype=='Admin') {
+if(mysqli_num_rows($result) == 1  and $userstatus==1 and $usertype==1) {
 
     $usertype = $row['userType'];//get user type
     $userstatus = $row['userStatus'];//get user status
