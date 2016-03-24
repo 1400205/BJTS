@@ -22,7 +22,7 @@ $username= $_SESSION["uname"];
         <div id="container">
 
             <div id="nav">
-                <h3><marquee behavior="alternate"> <?php echo "User: ". $username; ?>
+                <h3><marquee behavior="alternate"> <?php echo "User Name: ". $username.";"; ?>
 
                         WLECOME TO BJTS
                     </marquee>
