@@ -35,13 +35,11 @@ $username= $_SESSION["uname"];
                 </h3><br>
                 <h4>Add Records</h4>
                 <ul>
-                    <a href="activateUsers.php">  <li>Activate Users</li></a>
+
                     <p></p>
                     <a href="bugRegister.php">  <li>Add Bug</li></a>
                     <p></p>
                     <a href="comments.php">  <li>Comment on Bugs</li></a>
-                    <p></p>
-                    <a href="adminChangeBugStatus.php">  <li>Admin Approve Bug Changes</li></a>
                     <p></p>
                     <a href="changeBugStatus.php">  <li>User Change Bug Status</li></a>
                     <p></p>
