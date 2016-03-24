@@ -38,7 +38,7 @@ echo '<h3>Change Bug Fix Status</h3>'.$_SESSION["$uid"];
 echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
     '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
-    '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
+    '</th>'.'<th>'.'Fixed?'.'</th>'.'</table>';
 //loop through the database and fetch all users with userStatus=0
 WHILE($row=mysqli_fetch_assoc($result))
 {
