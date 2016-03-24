@@ -12,6 +12,8 @@ $uid=$_SESSION["userid"];
 ?>
 
 <form action="upload.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Select Bug to Attach File</legend>
     <?php
     /**
      * Created by PhpStorm.
@@ -28,7 +30,6 @@ $uid=$_SESSION["userid"];
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Comment on bugs </h3>'.$_SESSION["$userid"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
         '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
@@ -109,5 +110,5 @@ $uid=$_SESSION["userid"];
     }
     ?>
 
-
+    </fieldset>
 </form>
