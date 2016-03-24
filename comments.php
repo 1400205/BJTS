@@ -21,7 +21,7 @@ $uid=$_SESSION["userid"];
 <body>
 <form method="post" action="comments.php">
     <fieldset>
-        <legend>Admin Change Bug Fixed-Status</legend>
+        <legend>Comment on bugs</legend>
     <?php
     /**
      * Created by PhpStorm.
