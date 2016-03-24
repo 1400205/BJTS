@@ -61,7 +61,7 @@ session_start();
                 WHILE($row=mysqli_fetch_assoc($result))
                 {
                     //get the userid, userTpe,userStatus,username
-                    $bugid=$row['bugs.bugID'];
+                    $bugid=$row['bugID'];
                     $title=$row['title'];
                     $bugdesc=$row['bugDesc'];
                    // $=$row['bugDesc'];
