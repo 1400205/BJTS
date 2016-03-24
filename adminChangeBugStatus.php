@@ -9,6 +9,12 @@ session_start();
     <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
+<div class="tableBox">
+
+    <br><br>
+    <section>
+        <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+        <p></p>
 <form method="post" action="adminChangeBugStatus.php">
     <fieldset>
         <legend>Admin Change Bug Fixed-Status</legend>
@@ -96,5 +102,8 @@ session_start();
 </fieldset>
 
 </form>
+    </section>
+    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
+</div>
 </body>
