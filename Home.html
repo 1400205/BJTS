@@ -1,5 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<?php
+session_start();
+?>
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: prosper
+ * Date: 23/03/2016
+ * Time: 08:40
+ */
+$uid=$_SESSION["userid"];
+?>
 <head>
     <meta charset="UTF-8">
     <title> and Job Tracking System</title>
@@ -8,6 +22,8 @@
 </head>
 <body>
 <form>
+
+
     <fieldset>
         <legend><H2>WELCOME</H2></legend>
 <div id="container">
@@ -17,6 +33,9 @@
 <h3><marquee behavior="alternate">
     WLECOME TO BJTS
 </marquee>
+    <?php
+    echo $uid;
+    ?>
 </h3><br>
             <h4>Add Records</h4>
             <ul>
