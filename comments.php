@@ -19,6 +19,12 @@ $uid=$_SESSION["userid"];
     <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
+div class="tableBox">
+
+<br><br>
+<section>
+    <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+    <p></p>
 <form method="post" action="comments.php">
     <fieldset>
         <legend>Comment on bugs</legend>
@@ -98,5 +104,9 @@ $uid=$_SESSION["userid"];
 
     </fieldset>
 </form>
+</section>
+<div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
+
+</div>
 
 </body>
