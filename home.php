@@ -26,7 +26,7 @@ $username= $_SESSION["uname"];
         <div id="container">
 
             <div id="nav">
-                <h3><marquee direction="down" > <?php echo "User Name: ". $username.";"; ?>
+                <h3><marquee direction="down"> <?php echo "User Name: ". $username.";"; ?>
 
                         WLECOME TO BJTS
                     </marquee>
@@ -64,15 +64,8 @@ $username= $_SESSION["uname"];
         </div>
     </fieldset>
 </form>
-<?php
-// Echo session variables that were set on previous page
-echo "user name: " . $_SESSION["uname"] . ".<br>";
-echo "password: " . $_SESSION["pwd"] . ".";
 
-echo  $_SESSION["usertype"]. "<br>";
-echo $_SESSION["userstatus"]."<br>";
 
-?>
 </section>
 <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
