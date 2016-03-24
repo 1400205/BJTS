@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bug and Job Tracking System</title>
-    <link rel="stylesheet"type="text/css" href="style.css"/>
+    <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
 
@@ -14,6 +14,10 @@
 <form method="post" action="bug.php">
 <fieldset>
     <legend>Bug Details</legend>
+
+    <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+    <h4> Bug Details</h4>
+    <p></p>
 <div id="content">
     <?php
     //Establishing connection with database
