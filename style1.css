@@ -145,8 +145,8 @@ label {
     font-weight:bold;
 }
 
-fieldset {  border:10px solid green;
-    padding-left: 10em;
+fieldset {  border:5px solid green;
+    padding-left: 15em;
     font:80%/1 sans-serif;
 }
 
