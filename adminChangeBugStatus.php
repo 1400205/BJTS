@@ -9,7 +9,7 @@ session_start();
     <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
-<div class="tableBox">
+<div class="">
 
     <br><br>
     <section>

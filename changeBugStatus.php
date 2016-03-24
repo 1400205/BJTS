@@ -9,12 +9,12 @@ session_start();
     <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
-<div class="tableBox">
+<div class="">
 
     <br><br>
     <section>
         <h3>Bugs & Jobs Tracking System(BJTS)</h3>
-        <p></p>
+
 <form method="post" action="changeBugStatus.php">
     <fieldset>
         <legend>Change Bug Fixed-Status</legend>
