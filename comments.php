@@ -16,10 +16,10 @@ $uid=$_SESSION["userid"];
 <head>
     <meta charset="UTF-8">
     <title>Admin Change Bug Fixed-Status</title>
-    <link rel="stylesheet"type="text/css" href="style.css"/>
+    <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
-<div class="">
+<div class="formBox">
 
 <br><br>
 <section>
