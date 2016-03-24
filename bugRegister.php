@@ -24,8 +24,9 @@ session_start();
 
 <section>
     <!--displays input fields for  user inputs-->
-    <fieldset>
+
         <form method="POST" action="bug.php">
+            <fieldset>
             <legend>Please enter your bug details...</legend>
             <p></p>
             <label for="title">Title</label><br>
@@ -37,9 +38,10 @@ session_start();
 
             <input type="submit"name="submit" value="Submit"><br>
             <label for="attachment">Attachment</label>
+            </fieldset>
         </form>
 
-    </fieldset>
+
 
 
 </section>

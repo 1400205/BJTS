@@ -17,11 +17,13 @@ session_start();
 
 <h1>Bugs & Jobs Tracking System(BJTS)</h1>
 <div class="loginBox">
-    <h3>LOGIN TO BJTS</h3>
+
     <br><br>
     <section>
-        <fieldset>
+
     <form method="post" action="login.php">
+        <fieldset>
+            <legend>LOGIN TO BJTS</legend>
         <label>Username:</label><br>
         <input type="text" name="username" placeholder="username" /><br><br>
         <label>Password:</label><br>
@@ -32,8 +34,9 @@ session_start();
             <a href="registerUser.php">New user? Please Register</a>
 
         </footer>
+        </fieldset>
     </form>
-            </fieldset>
+
     </section>
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 

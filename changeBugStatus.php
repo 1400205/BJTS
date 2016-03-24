@@ -9,6 +9,8 @@ session_start();
 </head>
 <body>
 <form method="post" action="changeBugStatus.php">
+    <fieldset>
+        <legend>Change Bug Fixed-Status</legend>
 <?php
 /**
  * Created by PhpStorm.
@@ -73,7 +75,7 @@ if(isset($_POST['submit'])){//to run PHP script on submit
     }
 }
 ?>
-
+</fieldset>
 
     </form>
 

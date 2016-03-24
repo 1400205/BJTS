@@ -19,6 +19,8 @@ $uid=$_SESSION["userid"];
 </head>
 <body>
 <form method="post" action="comments.php">
+    <fieldset>
+        <legend>Admin Change Bug Fixed-Status</legend>
     <?php
     /**
      * Created by PhpStorm.
@@ -93,7 +95,7 @@ $uid=$_SESSION["userid"];
     }
     ?>
 
-
+    </fieldset>
 </form>
 
 </body>

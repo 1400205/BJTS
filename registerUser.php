@@ -21,9 +21,10 @@
 </header>
 
 <section>
-    <fieldset>
+
     <form method="post" action="Registrations.php">
-        <h3>Create Account</h3>
+        <fieldset>
+        <legend>Create Account</legend>
         <lable for="username">User Name</lable><br/>
         <input type="text" name="username"/>
         <p></p>
@@ -40,9 +41,9 @@
         <p></p>
 
         <input type="submit" name="submit" Value="Create your BJTS Account"/>
-
+        </fieldset>
     </form>
-    </fieldset>
+
 </section>
 
 </body>
