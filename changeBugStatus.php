@@ -51,7 +51,7 @@ WHILE($row=mysqli_fetch_assoc($result))
 
 }
 ?>
-
+<p></p>
     <input type="submit" name="submit" value="submit">
 <?php
 
@@ -72,7 +72,8 @@ if(isset($_POST['submit'])){//to run PHP script on submit
                 // Close connection
            // mysqli_close($db);
         }
-    }
+        echo "Record Added Successfully";
+    }else{echo "Please Select Bug(s) Before Submitting";}
 }
 ?>
 </fieldset>
