@@ -15,10 +15,10 @@ $uid=$_SESSION["userid"];
 <head>
     <meta charset="UTF-8">
     <title>Bug and Job Tracking System</title>
-    <link rel="stylesheet"type="text/css" href="style.css"/>
+    <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
-<div class="formBox">
+<div class="">
 
     <br><br>
     <section>
