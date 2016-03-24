@@ -18,10 +18,9 @@
 
 <div class="loginBox">
 
-    <br><br>
+    <h3>Bug & Job Tracking System</h3><br>
 
 <section>
-    <h3>Bug & Job Tracking System</h3>
 
     <form method="post" action="Registrations.php">
         <fieldset>
@@ -29,14 +28,14 @@
             <label>Username:</label><br><br/>
         <input type="text" name="username"/>
         <p></p>
-        <lable for="Email">Email</lable><br/>
+            <label>Email:</label><br><br/
         <input type="email" name="email"/>
         <p></p>
 
-        <lable for="phone">Your Phone Number</lable><br/>
+            <label>Your phone number:</label><br><br/>
         <input type="number" maxlength="15" name="phone"/>
         <p></p>
-        <lable for="password">Your Password</lable><br/>
+            <label>Password:</label><br><br/>
         <input type="password" name="password"/>
 
         <p></p>
