@@ -65,3 +65,9 @@ else
 }
 
 ?>
+<?php
+// Start the session
+$_SESSION["usertype"];
+$_SESSION["userstatus"];
+  $_SESSION["userid"];
+?>
