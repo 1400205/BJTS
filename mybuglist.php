@@ -16,11 +16,11 @@ session_start();
 
 <form method="post" action="changeBugStatus.php">
     <fieldset>
+
+        <legend>List of Bugs</legend>
         <h3>Bugs & Jobs Tracking System(BJTS)</h3>
         <h4>List of Bugs</h4>
-        <p></p>
-        <legend>List of Bugs</legend>
-
+        <p>--------------------------------------------------------</p>
         <?php
         /**
          * Created by PhpStorm.

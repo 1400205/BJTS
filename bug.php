@@ -12,13 +12,13 @@
     <br><br>
     <section>
 <form method="post" action="bug.php">
-    <h3>Bugs & Jobs Tracking System(BJTS)</h3>
-    <h4> Bug Details</h4>
-    <p></p>
+
 <fieldset>
     <legend>Bug Details</legend>
 
-
+    <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+    <h4> Bug Details</h4>
+    <p>--------------------------------------------------------</p>
 <div id="content">
     <?php
     //Establishing connection with database
