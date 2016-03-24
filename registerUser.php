@@ -28,15 +28,14 @@
             <label>Username:</label><br><br/>
         <input type="text" name="username"/>
         <p></p>
-            <label>Email:</label><br><br/>
-
+            <label>Username:</label><br><br/>
         <input type="email" name="email"/>
         <p></p>
 
-            <label> phone number:</label><p></p>
+            <label>Username:</label><br><br/>
         <input type="number" maxlength="15" name="phone"/>
         <p></p>
-            <label>Password:</label><br><br/>
+            <label>Username:</label><br><br/>
         <input type="password" name="password"/>
 
         <p></p>
