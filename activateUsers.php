@@ -10,7 +10,7 @@ session_start();
 </head>
 <body>
 
-<div class="formBox">
+<div class="tableBox">
 
     <br><br>
     <section>
