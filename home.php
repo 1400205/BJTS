@@ -18,13 +18,11 @@ session_start();
         <div id="container">
 
             <div id="nav">
-
+               <?php echo "user name: " . $_SESSION["uname"] . ".<br>";?>
                 <h3><marquee behavior="alternate">
                         WLECOME TO BJTS
                     </marquee>
-                    <p>  <?php
-                        echo $uid;
-                        ?></p>
+
                 </h3><br>
                 <h4>Add Records</h4>
                 <ul>
