@@ -17,12 +17,12 @@ session_start();
 
 <body>
 
-
+<h1>Bugs & Jobs Tracking System(BJTS)</h1>
 <div class="loginBox">
 
     <br><br>
     <section>
-        <h1>Bugs & Jobs Tracking System(BJTS)</h1>
+
     <form method="post" action="login.php">
         <fieldset>
             <legend>LOGIN TO BJTS</legend>
