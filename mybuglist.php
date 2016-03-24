@@ -43,11 +43,10 @@ session_start();
             $bugdesc=$row['bugDesc'];
             // $username=$row['username'];
 
-            echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-                '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
-                $bugdesc.'</td>'.'<td>'.
-                "<input type='checkbox' name='bugid[]' value = '$bugid'>".
-                '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
+            echo
+                '<a href="mybuglist.php?uid="'.$bugid.'<br>'.$bugid.'<br>' . $title.'<br>'. $bugdes.'</a></br>';
+
+
 
 
 
