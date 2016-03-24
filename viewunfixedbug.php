@@ -33,7 +33,7 @@
                 <legend>Fixed Bug Details</legend>
 
                 <h3>Bugs & Jobs Tracking System(BJTS)</h3>
-                <h4> fixed Bug Details</h4>
+                <h4> Unfixed Bug Details</h4>
                 <p>--------------------------------------------------------</p>
                 <div id="content">
                     <?php

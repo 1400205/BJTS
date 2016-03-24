@@ -36,7 +36,7 @@ session_start();
 
                 <legend>List of Bugs</legend>
                 <h3>Bugs & Jobs Tracking System(BJTS)</h3>
-                <h4>List of Bugs</h4>
+                <h4>List Unfixed of Bugs</h4>
                 <p>--------------------------------------------------------</p>
                 <?php
                 /**
