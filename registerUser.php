@@ -28,11 +28,12 @@
             <label>Username:</label><br><br/>
         <input type="text" name="username"/>
         <p></p>
-            <label>Email:</label><br><br/
+            <label>Email:</label><br><br/>
+
         <input type="email" name="email"/>
         <p></p>
 
-            <label> phne number:</label><br><br/>
+            <label> phone number:</label><br><br/>
         <input type="number" maxlength="15" name="phone"/>
         <p></p>
             <label>Password:</label><br><br/>
