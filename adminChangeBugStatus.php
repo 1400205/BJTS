@@ -86,7 +86,9 @@ session_start();
                 //mysqli_close($db);
             }
             echo "Record added successfully"/**$qry. mysqli_error($db)*/;
-        }
+
+
+        }else{echo "Please select Bug(s) before submitting"/**$qry. mysqli_error($db)*/;}
 
     }
     ?>
