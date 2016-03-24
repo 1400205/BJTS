@@ -145,8 +145,8 @@ label {
     font-weight:bold;
 }
 
-fieldset {  border:1px solid green;
-    padding: 1em;
+fieldset {  border:10px solid green;
+    padding: 30em;
     font:80%/1 sans-serif;
 }
 
@@ -154,8 +154,8 @@ legend {
     padding: 0.5em 0.7em;
     border:10px solid green;
     color:green;
-    font-size:100%;
+    font-size:80%;
     text-align:right;
-    width:800px;
+
 }
 
