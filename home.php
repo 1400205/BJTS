@@ -22,7 +22,10 @@ echo $username;
         <div id="container">
 
             <div id="nav">
-               <?php echo "<marguee behavior="."alternate"  . $_SESSION["uname"] .":". "WELCOME TO BJTS". ".</marquee>"."<br>";?>
+               "<marguee behavior=alternate  <?php echo $_SESSION["uname"]; ?>"WELCOME TO BJTS"</marquee><br>
+                <h3><marquee behavior="alternate">
+                        WLECOME TO BJTS
+                    </marquee>
 
 
                 </h3><br>
