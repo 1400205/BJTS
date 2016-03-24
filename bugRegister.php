@@ -26,7 +26,7 @@ session_start();
 <p></p>
         <form method="post" action="addBugs.php">
             <fieldset>
-                <legend>ADD BUGS</legend>
+                <legend>ADD BUGS</legend><br>
                 <label>Title:</label><br>
                 <input type="text" name="title" placeholder="title" /><br><br>
                 <label>Description:</label><br>
