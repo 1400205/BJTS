@@ -36,11 +36,11 @@ $usertype = $row['userType'];//get user type
 $userstatus = $row['userStatus'];//get user status
 $userid = $row['uid'];//get user id
 
-if(mysqli_num_rows($result) == 1  and $userstatus==1) {
+if(mysqli_num_rows($result) == 1  and $userstatus==1 and $usertype=='Admin') {
 
     $usertype = $row['userType'];//get user type
     $userstatus = $row['userStatus'];//get user status
-    header("location: home.php"); // Redirecting To another Page
+    header("location: adminHome.php"); // Redirecting To another Page
 
     $_SESSION["uname"] = $username;
     $_SESSION["pwd"] = $password;
@@ -49,10 +49,14 @@ if(mysqli_num_rows($result) == 1  and $userstatus==1) {
     $_SESSION["userstatus"] = $userstatus;//user stautus assigned to session global variable
     $_SESSION["userid"] = $userid;//user id assigned to session global variable
 }
-elseif (mysqli_num_rows($result) == 1 and $usertype=='Non-Admin' and $userstatus==0)
+elseif (mysqli_num_rows($result) == 1 and $usertype=='Non-Admin' and $userstatus==1)
     {
-        header("location: userHome.php"); // Redirecting To another Page
+        header("location: home.php"); // Redirecting To another Page
     }
+elseif (mysqli_num_rows($result) == 1 and $userstatus==0)
+{
+    echo "Your user account is pending approval";
+}
 else
 {
     echo "Incorrect username or password.";
