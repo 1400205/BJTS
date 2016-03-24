@@ -9,6 +9,9 @@ session_start();
 </head>
 <body>
 <form method="post" action="activateUsers.php">
+    <fieldset>
+        <legend>Activate Users </legend>
+
     <?php
     /**
      * Created by PhpStorm.
@@ -73,6 +76,8 @@ session_start();
         }
     }
     ?>
+            </fieldset>
+
 
 
 </form>

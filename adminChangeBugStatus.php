@@ -9,6 +9,8 @@ session_start();
 </head>
 <body>
 <form method="post" action="adminChangeBugStatus.php">
+    <fieldset>
+        <legend>Admin Change Bug Fixed-Status</legend>
     <?php
     /**
      * Created by PhpStorm.
@@ -86,7 +88,7 @@ session_start();
         }
     }
     ?>
-
+</fieldset>
 
 </form>
 
