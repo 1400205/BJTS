@@ -23,7 +23,7 @@ session_start();
     <br><br>
     <section>
         <h3>Bugs & Jobs Tracking System(BJTS)</h3>
-
+<p></p>
         <form method="post" action="addBugs.php">
             <fieldset>
                 <legend>ADD BUGS</legend>
