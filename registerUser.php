@@ -33,7 +33,7 @@
         <input type="email" name="email"/>
         <p></p>
 
-            <label> phone number:</label><br><br/>
+            <label> phone number:</label><p></p>
         <input type="number" maxlength="15" name="phone"/>
         <p></p>
             <label>Password:</label><br><br/>
