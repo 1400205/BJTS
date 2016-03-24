@@ -39,7 +39,6 @@ session_start();
             <a href="registerUser.php">New user? Please Register</a>
 
         </footer>
-        <p></p>
     </form>
 
 
