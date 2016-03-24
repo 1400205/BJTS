@@ -14,6 +14,10 @@ $username= $_SESSION["uname"];
 </head>
 
 <body>
+<div class="formbox">
+
+    <br><br>
+    <section>
 <form>
 
 
@@ -69,5 +73,9 @@ echo  $_SESSION["usertype"]. "<br>";
 echo $_SESSION["userstatus"]."<br>";
 
 ?>
+</section>
+<div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
+
+</div>
 </body>
 </html>
