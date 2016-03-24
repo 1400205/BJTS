@@ -56,8 +56,6 @@ $username= $_SESSION["uname"];
                     <a href="unfixedBugs.php">  <li>View Unfixed Bugs</li></a>
                     <p></p>
                     <a href="commentedBugs.php">  <li>Bugs With Comments</li></a>
-                    <p></p>
-                    <a href="">  <li>View Bugs Pending Approval</li></a>
 
                 </ul>
             </div>
