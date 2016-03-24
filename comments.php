@@ -19,7 +19,7 @@ $uid=$_SESSION["userid"];
     <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
-div class="tableBox">
+<div class="tableBox">
 
 <br><br>
 <section>
