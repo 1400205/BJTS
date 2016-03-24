@@ -45,7 +45,7 @@ $username= $_SESSION["uname"];
                 <h4>View All</h4>
                 <ul>
                     <a href="mybuglist.php">  <li>View All Bugs</li></a>
-                    <a href="buglist.php">  <li>View Fixed Bugs</li></a>
+                    <a href="fixedBugList.php">  <li>View Fixed Bugs</li></a>
                     <a href="">  <li>View Unfixed Bugs</li></a>
                     <a href="">  <li>Bugs With Comments</li></a>
                     <a href="">  <li>View Bugs Pending Approval</li></a>
