@@ -38,11 +38,12 @@ session_start();
         </fieldset>
     </form>
 
-    </section>
+
 
 </div>
+
 <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
-
+</section>
 </body>
 </html>
