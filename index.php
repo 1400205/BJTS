@@ -32,8 +32,6 @@ session_start();
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value = "login"/>
 
-            <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
-
         </fieldset>
         <footer>
             <a href="registerUser.php">New user? Please Register</a>
