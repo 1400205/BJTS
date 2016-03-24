@@ -6,6 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Activate Users</title>
+    <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
 <form method="post" action="activateUsers.php">

@@ -10,6 +10,14 @@ session_start();
  */
 $uid=$_SESSION["userid"];
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug and Job Tracking System</title>
+    <link rel="stylesheet"type="text/css" href="style.css"/>
+</head>
+<body>
 
 <form action="upload.php" method="post" enctype="multipart/form-data">
     <fieldset>
@@ -113,3 +121,5 @@ $uid=$_SESSION["userid"];
 
     </fieldset>
 </form>
+</body>
+</html>

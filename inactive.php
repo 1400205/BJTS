@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inactive users</title>
+    <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
 

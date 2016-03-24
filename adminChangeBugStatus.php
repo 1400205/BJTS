@@ -6,6 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Admin Change Bug Fixed-Status</title>
+    <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
 <form method="post" action="adminChangeBugStatus.php">

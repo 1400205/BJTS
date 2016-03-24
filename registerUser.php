@@ -12,6 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bug and Job Tracking System</title>
+    <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
 
