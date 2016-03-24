@@ -12,7 +12,7 @@
     include("connect.php");
 
     //select everything from bug table
-    $sql="SELECT * FROM bugs WHERE bugID=".$_GET["ID"];
+    $sql="SELECT * FROM bugs WHERE bugID=".$_GET["id"];
 
     //fetch result from database
     $result=mysqli_query($db,$sql);

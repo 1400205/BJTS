@@ -17,6 +17,8 @@
     //fetch result from database
     $result=mysqli_query($db,$sl);
 
+
+
     //scan through each row in the response
     while ($row=mysqli_fetch_assoc($result)){
         //get title and id from the bug
@@ -26,7 +28,8 @@
         echo "<a href='bug.php?id='".$bugID.">".$bugTitle."</a></br>";
 
     }
-
+    echo $bugTitle;
+    echo $bugID;
     ?>
 
 </div>
