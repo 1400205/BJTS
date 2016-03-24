@@ -22,7 +22,7 @@ echo $username;
         <div id="container">
 
             <div id="nav">
-               "<marguee behavior=alternate  <?php echo $username; ?>"WELCOME TO BJTS"</marquee><br>
+               <marguee> <?php echo $username; ?></marguee> <br>
                 <h3><marquee behavior="alternate">
                         WLECOME TO BJTS
                     </marquee>
