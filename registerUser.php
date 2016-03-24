@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div class="loginBox">
+<div class="formBox">
 
     <h3>Bug & Job Tracking System</h3><br>
 
@@ -32,7 +32,7 @@
         <input type="email" name="email"/>
         <p></p>
 
-            <label>Your phone number:</label><br><br/>
+            <label> phne number:</label><br><br/>
         <input type="number" maxlength="15" name="phone"/>
         <p></p>
             <label>Password:</label><br><br/>
