@@ -6,9 +6,15 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Change Bug Fix Status</title>
-    <link rel="stylesheet"type="text/css" href="style.css"/>
+    <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
+<div class="">
+
+    <br><br>
+    <section>
+        <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+        <p></p>
 <form method="post" action="changeBugStatus.php">
     <fieldset>
         <legend>List of Bugs</legend>
@@ -53,5 +59,8 @@ session_start();
     </fieldset>
 
 </form>
+    </section>
+    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
+</div>
 </body>
