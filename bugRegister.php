@@ -26,6 +26,9 @@ session_start();
 <div class="addbug">
 
     <br><br>
+
+
+
     <section>
 
         <form method="post" action="addBugs.php">
@@ -34,7 +37,7 @@ session_start();
                 <label>Title:</label><br>
                 <input type="text" name="title" placeholder="title" /><br><br>
                 <label>Description:</label><br>
-                <textarea name="bugDesc" placeholder="description" />  <br><br>
+                <textarea name="bugDesc"cols="45" rows="5"></textarea> <br><br>
                 <input type="submit" name="submit" value = "Submit"/>
                 <p></p>
                 <footer>
