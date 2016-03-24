@@ -9,20 +9,19 @@ session_start();
     <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
+
+<div class="formBox">
+
+    <br><br>
+    <section>
+        <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+        <p></p>
 <form method="post" action="activateUsers.php">
     <fieldset>
         <legend>Activate Users </legend>
         <p></p>
 
     <?php
-    /**
-     * Created by PhpStorm.
-     * User: prosper
-     * Date: 15/03/2016
-     * Time: 08:21
-     *
-     *
-     */
 
     include ("connect.php");//Establishing connection with our database
 
@@ -82,5 +81,9 @@ session_start();
 
 
 </form>
+    </section>
+    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
+
+</div>
 
 </body>
