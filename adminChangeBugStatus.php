@@ -51,7 +51,7 @@ session_start();
 
     }
     ?>
-
+<p></p>
     <input type="submit" name="submit" value="submit">
     <?php
 
@@ -85,7 +85,9 @@ session_start();
                 // Close connection
                 //mysqli_close($db);
             }
+            echo "Record added successfully"/**$qry. mysqli_error($db)*/;
         }
+
     }
     ?>
 </fieldset>
