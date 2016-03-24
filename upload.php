@@ -25,7 +25,10 @@ $uid=$_SESSION["userid"];
 <form action="upload.php" method="post" enctype="multipart/form-data">
     <fieldset>
         <legend>Select Bug to Attach File</legend>
-        <H3>File Attachment</H3>
+
+        <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+        <h4>Attach a file for a bug</h4>
+        <p>--------------------------------------------------------</p>
     <?php
     /**
      * Created by PhpStorm.
