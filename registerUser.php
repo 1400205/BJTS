@@ -18,10 +18,11 @@
 
 <header>
 
-    <h3>Bug & Job Tracking System</h3>
+
 </header>
 
 <section>
+    <h3>Bug & Job Tracking System</h3>
 
     <form method="post" action="Registrations.php">
         <fieldset>
