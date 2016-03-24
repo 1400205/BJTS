@@ -3,7 +3,7 @@ session_start();
 ?>
 <?php
 $username= $_SESSION["uname"];
-echo $username;
+echo "USER:".$username;
 ?>
 
 <html>
