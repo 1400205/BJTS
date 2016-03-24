@@ -26,18 +26,12 @@ session_start();
 <p></p>
         <form method="post" action="addBugs.php">
             <fieldset>
-                <p></p>
                 <legend>ADD BUGS</legend>
                 <label>Title:</label><br>
                 <input type="text" name="title" placeholder="title" /><br><br>
                 <label>Description:</label><br>
                 <input type="text" name="bugDesc" placeholder="description" />  <br><br>
                 <input type="submit" name="submit" value = "Submit"/>
-                <p></p>
-                <footer>
-
-
-                </footer>
             </fieldset>
         </form>
 
