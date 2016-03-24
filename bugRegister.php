@@ -35,9 +35,9 @@ session_start();
             <fieldset>
                 <legend>ENTER BUG DETAILS</legend>
                 <label>Title:</label><br>
-                <input type="text" name="title" placeholder="title" /><br><br>
+                <input type="text" name="title" placeholder="title" /><br>
                 <label>Description:</label><br>
-                <textarea name="bugDesc"cols="45" rows="5"></textarea> <br><br>
+                <textarea name="bugDesc"cols="45" rows="5"></textarea> <br>
                 <input type="submit" name="submit" value = "Submit"/>
                 <p></p>
                 <footer>
