@@ -16,10 +16,9 @@
 </head>
 <body>
 
-<header>
+<div class="loginBox">
 
-
-</header>
+    <br><br>
 
 <section>
     <h3>Bug & Job Tracking System</h3>
@@ -45,7 +44,7 @@
         <input type="submit" name="submit" Value="Create your BJTS Account"/>
         </fieldset>
     </form>
-
+</div>
 </section>
 
 </body>
