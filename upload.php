@@ -56,7 +56,7 @@ $uid=$_SESSION["userid"];
     }
     //echo '<a href="commen">';
     ?>
-
+<P></P>
     <input type="file" name="uploaded_file">
     <p></p>
     <input type="submit" value="Upload file">
