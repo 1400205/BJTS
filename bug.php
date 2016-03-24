@@ -7,7 +7,7 @@
 </head>
 <body>
 
-form method="post" action="">
+<form method="post" action="bug.php">
 <fieldset>
     <legend>Bug Details</legend>
 <div id="content">
