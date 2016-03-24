@@ -56,9 +56,9 @@
                     $commentdate=$row['postedDate'];
                     //Write the link to the page
                     echo "<h2>".$bugTitle."</h2>";
-                    echo "Comment "."<br>";
+                    echo "Comment: "."<br>";
                     echo "<p2>".$comment."</p2>"."<br>";
-                    echo "Comment Date "."<br>";
+                    echo "Comment Date: "."<br>";
                     echo "<p2>".$commentdate."</p2>";
 
 
