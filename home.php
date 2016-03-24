@@ -14,7 +14,7 @@ $username= $_SESSION["uname"];
 </head>
 
 <body>
-<<form>
+<form>
 
 
     <fieldset>
