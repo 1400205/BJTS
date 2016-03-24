@@ -146,7 +146,7 @@ label {
 }
 
 fieldset {  border:10px solid green;
-    padding: 1em;
+    padding-left: 10em;
     font:80%/1 sans-serif;
 }
 
