@@ -11,6 +11,7 @@ session_start();
 <form method="post" action="activateUsers.php">
     <fieldset>
         <legend>Activate Users </legend>
+        <p></p>
 
     <?php
     /**
