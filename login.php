@@ -61,6 +61,11 @@ else
 {
     echo "Incorrect username or password.";
 
+// Start the session
+$_SESSION["usertype"];
+$_SESSION["userstatus"];
+  $_SESSION["userid"];
+
 
 }
 
