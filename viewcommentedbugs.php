@@ -41,7 +41,7 @@
                     include("connect.php");
 
                     //select everything from bug table
-                    $sql="SELECT bugs.bugID,title,bugDesc,bjtscomment,postedDate FROM bugs,bjtsComments WHERE bugs.bugID=bjtscomments.bugID=".$_GET["id"];
+                    $sql="SELECT bugs.bugID,title,bugDesc,bjtscomment,postedDate FROM bugs,bjtsComments WHERE bjtscomments.bugID=".$_GET["id"];
 
                     //fetch result from database
                     $result=mysqli_query($db,$sql);
