@@ -61,9 +61,10 @@ session_start();
                 WHILE($row=mysqli_fetch_assoc($result))
                 {
                     //get the userid, userTpe,userStatus,username
-                    $bugid=$row['bugID'];
+                    $bugid=$row['bugs.bugID'];
                     $title=$row['title'];
                     $bugdesc=$row['bugDesc'];
+                   // $=$row['bugDesc'];
                     // $username=$row['username'];
 
                     // echo'<a href="mybuglist.php?uid="'.$bugid.'<br>'.$bugid.'<br>' . $title.'<br>'. $bugdes.'</a>'.'</br>';
