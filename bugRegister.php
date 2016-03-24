@@ -18,7 +18,7 @@ session_start();
 <body>
 
 
-<div class="loginBox">
+<div class="formBoxBox">
 
     <br><br>
     <section>
