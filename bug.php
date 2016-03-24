@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Bug and Job Tracking System</title>
+    <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
 
+form method="post" action="">
+<fieldset>
+    <legend>Bug Details</legend>
 <div id="content">
     <?php
     //Establishing connection with database
@@ -34,7 +38,9 @@
 
 </div>
 
+</fieldset>
 
+</form>
 
 </body>
 </html>
