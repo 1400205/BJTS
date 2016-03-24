@@ -9,35 +9,27 @@ session_start();
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Bugs Registration</title>
     <link rel="stylesheet"type="text/css" href="style.css"/>
+    <title>Bugs and Jobs Tracking System</title>
+
+
 </head>
 
 <body>
 
-<header>
-    <!--add header information such as title, images, ADs etc-->
-    <!-- <img src="logo.jpg" alt="logo of BJTS"/>-->
-    <h3>Add Bugs Discovered</h3>
-
-</header>
-
-
-<div class="addbug">
+<h1>Bugs & Jobs Tracking System(BJTS)</h1>
+<div class="loginBox">
 
     <br><br>
-
-
-
     <section>
 
         <form method="post" action="addBugs.php">
             <fieldset>
-                <legend>ENTER BUG DETAILS</legend>
+                <legend>ADD BUGS</legend>
                 <label>Title:</label><br>
-                <input type="text" name="title" placeholder="title" /><br>
+                <input type="text" name="title" placeholder="title" /><br><br>
                 <label>Description:</label><br>
-                <textarea name="bugDesc"cols="45" rows="5"></textarea> <br>
+                <input type="text" name="bugDesc" placeholder="description" />  <br><br>
                 <input type="submit" name="submit" value = "Submit"/>
                 <p></p>
                 <footer>
@@ -51,6 +43,7 @@ session_start();
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 </div>
+
 
 </body>
 </html>
