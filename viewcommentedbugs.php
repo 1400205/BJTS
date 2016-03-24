@@ -52,9 +52,10 @@
                     $bugTitle=$row['title'];
                     $bugID=$row['bugID'];
                     $bugDesc=$row['bugDesc'];
+                    $comment=$row['bjtscomments'];
                     //Write the link to the page
                     echo "<h2>".$bugTitle."</h2>";
-                    echo "<p2>".$bugDesc."</p2>";
+                    echo "<p2>".$comment."</p2>";
 
 
 
