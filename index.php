@@ -35,14 +35,15 @@ session_start();
             <a href="registerUser.php">New user? Please Register</a>
 
         </footer>
+            <p></p>
+            <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
+
         </fieldset>
     </form>
 
 
 
 </div>
-<p></p>
-<div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 </section>
 </body>
