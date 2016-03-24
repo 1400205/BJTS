@@ -57,7 +57,7 @@
                     //Write the link to the page
                     echo "<h2>".$bugTitle."</h2>";
                     echo "<p2>".$comment."</p2>";
-                    echo "<p2>".$commentdate."</p2>";
+                   // echo "<p2>".$commentdate."</p2>";
 
 
 
