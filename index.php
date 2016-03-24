@@ -41,7 +41,7 @@ session_start();
 
 
 </div>
-
+<p></p>
 <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 </section>
