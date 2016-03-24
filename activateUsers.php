@@ -74,7 +74,7 @@ session_start();
                 // mysqli_close($db);
             }
             echo "Update was successful";
-        }
+        }else{echo "Select a User To Activate";}
     }
     ?>
             </fieldset>
