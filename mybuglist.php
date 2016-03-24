@@ -11,7 +11,7 @@ session_start();
 <body>
 <form method="post" action="changeBugStatus.php">
     <fieldset>
-        <legend>Change Bug Fixed-Status</legend>
+        <legend>List of Bugs</legend>
         <?php
         /**
          * Created by PhpStorm.
