@@ -22,29 +22,32 @@ session_start();
 
 </header>
 
-<section>
-    <!--displays input fields for  user inputs-->
 
-        <form method="POST" action="addBugs.php">
+<div class="addbug">
+
+    <br><br>
+    <section>
+
+        <form method="post" action="addBugs.php">
             <fieldset>
-            <legend>Please enter your bug details...</legend>
-            <p></p>
-            <label for="title">Title</label><br>
-            <input type="text" name="title">
-            <p></p>
-            <label for="description">Description</label> <br>
-            <textarea name="bugDesc"cols="45" rows="5"></textarea>
-            <p></p>
+                <legend>ENTER BUG DETAILS</legend>
+                <label>Title:</label><br>
+                <input type="text" name="title" placeholder="title" /><br><br>
+                <label>Description:</label><br>
+                <textarea name="bugDesc" placeholder="description" />  <br><br>
+                <input type="submit" name="submit" value = "Submit"/>
+                <p></p>
+                <footer>
 
-            <input type="submit"name="submit" value="Submit"><br>
 
+                </footer>
             </fieldset>
         </form>
 
+    </section>
+    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
-
-
-</section>
+</div>
 
 </body>
 </html>
