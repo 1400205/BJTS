@@ -10,7 +10,8 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Bugs and Jobs Tracking System</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 
 <body>
