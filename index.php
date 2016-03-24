@@ -34,6 +34,7 @@ session_start();
 
         </fieldset>
         <footer>
+            <p></p>
             <a href="registerUser.php">New user? Please Register</a>
 
         </footer>
