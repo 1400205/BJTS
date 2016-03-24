@@ -7,6 +7,10 @@
 </head>
 <body>
 
+<div class="">
+
+    <br><br>
+    <section>
 <form method="post" action="bug.php">
 <fieldset>
     <legend>Bug Details</legend>
@@ -41,6 +45,9 @@
 </fieldset>
 
 </form>
+    </section>
+    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
+</div>
 </body>
 </html>
