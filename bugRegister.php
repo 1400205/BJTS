@@ -37,7 +37,7 @@ session_start();
             <p></p>
 
             <input type="submit"name="submit" value="Submit"><br>
-            <label for="attachment">Attachment</label>
+
             </fieldset>
         </form>
 
