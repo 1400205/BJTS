@@ -27,7 +27,6 @@ session_start();
     $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus='0'";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Change Bug Fix Status</h3>'.$_SESSION["$uid"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'User ID'.
         '</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'User Type'.
 
