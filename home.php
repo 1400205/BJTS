@@ -3,7 +3,7 @@ session_start();
 ?>
 <?php
 $username= $_SESSION["uname"];
-echo "USER:".$username;
+
 ?>
 
 <html>
@@ -22,8 +22,8 @@ echo "USER:".$username;
         <div id="container">
 
             <div id="nav">
-               <marguee> <?php echo $username; ?></marguee> <br>
-                <h3><marquee behavior="alternate">
+                <h3><marquee behavior="alternate"> <?php echo "User: ". $username; ?>
+
                         WLECOME TO BJTS
                     </marquee>
 
