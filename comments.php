@@ -19,7 +19,7 @@ $uid=$_SESSION["userid"];
     <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
-<div class="formBox">
+<div class="">
 
 <br><br>
 <section>
