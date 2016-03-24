@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Change Bug Fix Status</title>
-    <link rel="stylesheet"type="text/css" href="style.css"/>
+    <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
 <div class="tableBox">
