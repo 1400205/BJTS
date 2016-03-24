@@ -36,18 +36,27 @@ $username= $_SESSION["uname"];
                 <h4>Add Records</h4>
                 <ul>
                     <a href="activateUsers.php">  <li>Activate Users</li></a>
+                    <p></p>
                     <a href="bugRegister.php">  <li>Add Bug</li></a>
+                    <p></p>
                     <a href="comments.php">  <li>Comment on Bugs</li></a>
+                    <p></p>
                     <a href="adminChangeBugStatus.php">  <li>Admin Approve Bug Changes</li></a>
+                    <p></p>
                     <a href="changeBugStatus.php">  <li>User Change Bug Status</li></a>
+                    <p></p>
                     <a href="upload.php">  <li>Attached File to Bug</li></a>
                 </ul>
                 <h4>View All</h4>
                 <ul>
                     <a href="mybuglist.php">  <li>View All Bugs</li></a>
+                    <p></p>
                     <a href="fixedBugList.php">  <li>View Fixed Bugs</li></a>
+                    <p></p>
                     <a href="unfixedBugs.php">  <li>View Unfixed Bugs</li></a>
-                    <a href="">  <li>Bugs With Comments</li></a>
+                    <p></p>
+                    <a href="commentedBugs.php">  <li>Bugs With Comments</li></a>
+                    <p></p>
                     <a href="">  <li>View Bugs Pending Approval</li></a>
 
                 </ul>
