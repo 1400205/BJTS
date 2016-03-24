@@ -23,11 +23,12 @@ $uid=$_SESSION["userid"];
 
 <br><br>
 <section>
-    <h3>Bugs & Jobs Tracking System(BJTS)</h3>
+
     <p></p>
 <form method="post" action="comments.php">
     <fieldset>
         <legend>Comment on bugs</legend>
+        <h3>Bugs & Jobs Tracking System(BJTS)</h3>
     <?php
     /**
      * Created by PhpStorm.
