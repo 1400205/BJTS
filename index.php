@@ -39,9 +39,9 @@ session_start();
     </form>
 
     </section>
-    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 </div>
+<div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
 
 </body>
