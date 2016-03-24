@@ -33,7 +33,7 @@ session_start();
             <input type="text" name="title">
             <p></p>
             <label for="description">Description</label> <br>
-            <textarea name="description"cols="45" rows="5"></textarea>
+            <textarea name="bugDesc"cols="45" rows="5"></textarea>
             <p></p>
 
             <input type="submit"name="submit" value="Submit"><br>
