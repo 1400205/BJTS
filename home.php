@@ -18,8 +18,8 @@ session_start();
         <div id="container">
 
             <div id="nav">
-               <?php echo "user name: " . $_SESSION["uname"] . ".<br>";?>
-                <h3><marquee behavior="alternate">
+                <h3><marquee  <?php echo "user name: " . $_SESSION["uname"] . ".<br>";?>
+                behavior="alternate">
                         WLECOME TO BJTS
                     </marquee>
 
