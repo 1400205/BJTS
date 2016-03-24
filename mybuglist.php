@@ -44,7 +44,7 @@ session_start();
             // $username=$row['username'];
 
             echo
-                '<a href="mybuglist.php?uid="'.$bugid.'<br>'.$bugid.'<br>' . $title.'<br>'. $bugdes.'</a></br>';
+                '<a href="mybuglist.php?uid="'.$bugid .''.$bugid.' ' . $title.' '. $bugdes.'</a></br>';
 
 
 
