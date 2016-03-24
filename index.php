@@ -31,7 +31,6 @@ session_start();
         <label>Password:</label><br>
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value = "login"/>
-        <p></p>
         <footer>
             <a href="registerUser.php">New user? Please Register</a>
 
