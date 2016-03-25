@@ -27,7 +27,7 @@ $username= $_SESSION["uname"];
         <div id="container">
 
             <div id="nav">
-                <h3><marquee direction="down"> <?php echo "User Name: ". $username; ?>
+                <h3><marquee direction="down"> <?php echo "User Name: ". $username;?>
 
                         WLECOME TO BJTS
                     </marquee>
