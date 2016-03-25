@@ -56,13 +56,10 @@ elseif (mysqli_num_rows($result) == 1 and $userstatus ==1 and $usertype ==2 )
         $usertype = $row['userType'];//get user type
         $userstatus = $row['userStatus'];//get user status
         header("location: home.php"); // Redirecting To another Page
-        $_SESSION["uname"] = $username;
-        $_SESSION["pwd"] = $password;
-
         $_SESSION["usertype"] = $usertype;//user type assigned to session global variable
         $_SESSION["userstatus"] = $userstatus;//user stautus assigned to session global variable
         $_SESSION["userid"] = $userid;//user id assigned to session global variable
-    }
+
     }
 elseif (mysqli_num_rows($result) == 1 and $userstatus==0)
 {
