@@ -52,7 +52,7 @@ if( $_POST["submit"])
 
         }else{
             {
-                echo "ERROR: Could not be able to execute. Please check duplicate record entry"/**$qry. mysqli_error($db)*/;
+                echo "ERROR: Could not be able to execute. Please check duplicate record entry". mysqli_error($db);
             }
 
 // Close connection
