@@ -16,6 +16,7 @@ session_start();
 </head>
 
 <body>
+<a href="logout.php"> <li class="li">logout</li></ul> </a>
 
 
 <div class="formBox">

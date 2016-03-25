@@ -19,6 +19,7 @@ $uid=$_SESSION["userid"];
     <link rel="stylesheet"type="text/css" href="style1.css"/>
 </head>
 <body>
+<a href="logout.php"> <li class="li">logout</li></ul> </a>
 <div class="">
 
 <br><br>
