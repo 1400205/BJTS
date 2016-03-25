@@ -9,6 +9,7 @@ session_start();
     <link rel="stylesheet"type="text/css" href="style.css"/>
 </head>
 <body>
+<a href="logout.php">  <logout</a>
 
 <div class="tableBox">
 
