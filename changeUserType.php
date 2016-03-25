@@ -25,16 +25,16 @@ session_start();
     <section>
         <h3>Bugs & Jobs Tracking System(BJTS)</h3>
         <p></p>
-        <form method="post" action="activateUsers.php">
+        <form method="post" action="changeUserType.php">
             <fieldset>
-                <legend>Activate Users </legend>
+                <legend>Change User to Admin </legend>
                 <p></p>
 
                 <?php
 
                 include ("connect.php");//Establishing connection with our database
 
-                $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus!='0'";//select required dataset from database
+                $sql="SELECT uid,userType,userStatus,username FROM users WHERE userStatus=2";//select required dataset from database
                 $result=mysqli_query($db,$sql);//fetch data from database
 
                 echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'User ID'.
@@ -69,7 +69,7 @@ session_start();
                         foreach($_POST['userType'] as $userType)
                         {
                             //get update query string
-                            $updateusers="UPDATE users SET userType = 1 WHERE userTYPE='$userType'";
+                            $updateusers="UPDATE users SET userType = 1 WHERE uid='$uid'";
 
                             if(mysqli_query($db,  $updateusers)){
 
