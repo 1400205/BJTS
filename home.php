@@ -21,13 +21,13 @@ $username= $_SESSION["uname"];
     <section>
 <form>
 
-
+    <?php echo "Welcome: ". $username; ?>
     <fieldset>
         <legend><H2>WELCOME</H2></legend>
         <div id="container">
 
             <div id="nav">
-                <h3><marquee direction="down"> <?php echo "User Name: ". $username.";"; ?>
+                <h3><marquee direction="down"> <?php echo "User Name: ". $username; ?>
 
                         WLECOME TO BJTS
                     </marquee>
