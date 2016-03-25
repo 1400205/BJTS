@@ -43,8 +43,7 @@ session_start();
 
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
             '<a href="changeBugStatus.php?uid="'.$uid.'>'.'<tr>'.'<td>'.$uid.'</td>'.'<td>' . $username.'</td>'.'<td>'.
-            $userType.'</td>'.'<td>'.
-            "<input type='checkbox' name='uid[]' value = '$uid'>".
+            $userType.'</td>'.'<td>'. "<input type='checkbox' name='uid[]' value = '$uid'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
