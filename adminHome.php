@@ -37,6 +37,8 @@ $username= $_SESSION["uname"];
                         <ul>
                             <a href="activateUsers.php">  <li>Activate Users</li></a>
                             <p></p>
+                            <a href="changeUserType.php">  <li>Change User Type</li></a>
+                            <p></p>
                             <a href="bugRegister.php">  <li>Add Bug</li></a>
                             <p></p>
                             <a href="comments.php">  <li>Comment on Bugs</li></a>
