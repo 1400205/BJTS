@@ -38,7 +38,7 @@ session_start();
                 $result=mysqli_query($db,$sql);//fetch data from database
 
                 echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'User ID'.
-                    '</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'User Type'.
+                    '</th>'.'<th>'.'User Name'.'</th>'.'<th>'.'Change to Admin'.
 
                     '</th>'.'<th>'.'Activate'.'</th>'.'</table>';
                 //loop through the database and fetch all users with userStatus=0
