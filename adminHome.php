@@ -14,7 +14,7 @@ $username= $_SESSION["uname"];
 </head>
 
 <body>
-<a href="logout.php"> <ul class="unstyle"><li>logout</li></ul> </a>
+<a href="logout.php"> <li class="li">logout</li></ul> </a>
 <div class="formbox">
 
     <br><br>
