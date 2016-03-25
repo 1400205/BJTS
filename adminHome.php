@@ -20,6 +20,7 @@ $username= $_SESSION["uname"];
     <br><br>
     <section>
         <form>
+            <?php echo "Welcome: ". $username; ?>
 
 
             <fieldset>
